@@ -1,0 +1,17 @@
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\bin\Debug\net7.0\Companies.Domain.Services.deps.json
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\bin\Debug\net7.0\Companies.Domain.Services.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\bin\Debug\net7.0\Companies.Domain.Services.pdb
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\bin\Debug\net7.0\Companies.Domain.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\bin\Debug\net7.0\Companies.Infrastructure.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\bin\Debug\net7.0\Companies.Domain.pdb
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\bin\Debug\net7.0\Companies.Infrastructure.pdb
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.csproj.AssemblyReference.cache
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.AssemblyInfoInputs.cache
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.AssemblyInfo.cs
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.csproj.CoreCompileInputs.cache
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.csproj.CopyComplete
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\refint\Companies.Domain.Services.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.pdb
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\ref\Companies.Domain.Services.dll

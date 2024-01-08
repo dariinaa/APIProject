@@ -1,0 +1,20 @@
+2024-01-08 22:42:55.643 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-08 22:42:55.696 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-08 22:42:55.703 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 22:42:55.705 +02:00 [INF] Hosting environment: Development
+2024-01-08 22:42:55.706 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-08 22:42:56.731 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-08 22:42:57.497 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 770.8351ms
+2024-01-08 22:42:57.541 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-08 22:42:57.541 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-08 22:42:57.554 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 13.4939ms
+2024-01-08 22:42:57.577 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.3593ms
+2024-01-08 22:42:58.287 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-08 22:42:58.760 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 473.3672ms
+2024-01-08 22:43:04.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/WeatherForecast - -
+2024-01-08 22:43:04.552 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.WeatherForecastController.Get (Companies.API)'
+2024-01-08 22:43:04.604 +02:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Companies.API.WeatherForecast] Get() on controller Companies.API.Controllers.WeatherForecastController (Companies.API).
+2024-01-08 22:43:04.621 +02:00 [INF] Executing ObjectResult, writing value of type 'Companies.API.WeatherForecast[]'.
+2024-01-08 22:43:04.652 +02:00 [INF] Executed action Companies.API.Controllers.WeatherForecastController.Get (Companies.API) in 36.4363ms
+2024-01-08 22:43:04.657 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.WeatherForecastController.Get (Companies.API)'
+2024-01-08 22:43:04.659 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/WeatherForecast - - - 200 - application/json;+charset=utf-8 130.4205ms

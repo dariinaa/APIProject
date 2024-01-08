@@ -1,0 +1,15 @@
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\bin\Debug\net7.0\Companies.Infrastructure.deps.json
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\bin\Debug\net7.0\Companies.Infrastructure.dll
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\bin\Debug\net7.0\Companies.Infrastructure.pdb
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\bin\Debug\net7.0\Companies.Domain.dll
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\bin\Debug\net7.0\Companies.Domain.pdb
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\Companies.Infrastructure.csproj.AssemblyReference.cache
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\Companies.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\Companies.Infrastructure.AssemblyInfoInputs.cache
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\Companies.Infrastructure.AssemblyInfo.cs
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\Companies.Infrastructure.csproj.CoreCompileInputs.cache
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\Companies.Infrastructure.csproj.CopyComplete
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\Companies.Infrastructure.dll
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\refint\Companies.Infrastructure.dll
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\Companies.Infrastructure.pdb
+D:\uni\semester_3\API\APIProject\Companies.Infrastructure\obj\Debug\net7.0\ref\Companies.Infrastructure.dll

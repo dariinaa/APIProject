@@ -1,0 +1,12 @@
+D:\uni\semester_3\API\APIProject\Companies.Domain\bin\Debug\net7.0\Companies.Domain.deps.json
+D:\uni\semester_3\API\APIProject\Companies.Domain\bin\Debug\net7.0\Companies.Domain.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain\bin\Debug\net7.0\Companies.Domain.pdb
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.AssemblyInfoInputs.cache
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.AssemblyInfo.cs
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.csproj.CoreCompileInputs.cache
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\refint\Companies.Domain.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.pdb
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\ref\Companies.Domain.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.csproj.AssemblyReference.cache
