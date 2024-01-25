@@ -15,3 +15,5 @@ D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Comp
 D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\refint\Companies.Domain.Services.dll
 D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.pdb
 D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\ref\Companies.Domain.Services.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\bin\Debug\net7.0\Companies.Domain.Services.runtimeconfig.json
+D:\uni\semester_3\API\APIProject\Companies.Domain.Services\obj\Debug\net7.0\Companies.Domain.Services.genruntimeconfig.cache

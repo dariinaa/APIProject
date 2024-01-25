@@ -10,3 +10,8 @@ D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\refint\Compan
 D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.pdb
 D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\ref\Companies.Domain.dll
 D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.csproj.AssemblyReference.cache
+D:\uni\semester_3\API\APIProject\Companies.Domain\bin\Debug\net7.0\Companies.Domain.runtimeconfig.json
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.genruntimeconfig.cache
+D:\uni\semester_3\API\APIProject\Companies.Domain\bin\Debug\net7.0\Companies.Infrastructure.dll
+D:\uni\semester_3\API\APIProject\Companies.Domain\bin\Debug\net7.0\Companies.Infrastructure.pdb
+D:\uni\semester_3\API\APIProject\Companies.Domain\obj\Debug\net7.0\Companies.Domain.csproj.CopyComplete
