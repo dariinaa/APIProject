@@ -11,6 +11,7 @@
           "Companies.Domain": "1.0.0",
           "Companies.Domain.Services": "1.0.0",
           "Companies.Infrastructure": "1.0.0",
+          "CsvHelper": "30.0.3",
           "Microsoft.AspNetCore.OpenApi": "7.0.12",
           "Microsoft.Data.Sqlite.Core": "8.0.1",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7",
@@ -33,6 +34,14 @@
           "lib/netstandard2.1/AutoMapper.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.0"
+          }
+        }
+      },
+      "CsvHelper/30.0.3": {
+        "runtime": {
+          "lib/net7.0/CsvHelper.dll": {
+            "assemblyVersion": "30.0.0.0",
+            "fileVersion": "30.0.3.9"
           }
         }
       },
@@ -811,6 +820,7 @@
         "dependencies": {
           "Companies.Domain": "1.0.0",
           "Companies.Infrastructure": "1.0.0",
+          "CsvHelper": "30.0.3",
           "Microsoft.Data.Sqlite.Core": "8.0.1",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7",
           "Serilog": "3.1.1",
@@ -826,6 +836,7 @@
       "Companies.Infrastructure/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "CsvHelper": "30.0.3",
           "Microsoft.Data.Sqlite.Core": "8.0.1",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7",
           "Serilog": "3.1.1",
@@ -852,6 +863,13 @@
       "sha512": "sha512-hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
       "path": "automapper/12.0.1",
       "hashPath": "automapper.12.0.1.nupkg.sha512"
+    },
+    "CsvHelper/30.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OK4xEoPKFZYZ2Km+ZTGRxuLo33u+ipKVCC9ICCGn5JRiAmPLRsCPZ/shL3HKGPwS33MQSPcPHigI4HnX3Q47yg==",
+      "path": "csvhelper/30.0.3",
+      "hashPath": "csvhelper.30.0.3.nupkg.sha512"
     },
     "EntityFramework/6.4.4": {
       "type": "package",

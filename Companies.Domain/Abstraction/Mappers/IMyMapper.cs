@@ -1,4 +1,4 @@
-﻿using Companies.Infrastructure.Entities;
+﻿using Companies.Infrastructure.Models;
 using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
@@ -11,5 +11,7 @@ namespace Companies.Domain.Abstraction.Mappers
     public interface IMyMapper
     {
         Industry DataToIndustry(SqliteDataReader reader);
+        Company DataToCompany(SqliteDataReader reader);
+        CompanyInsertion MapToCompanyInsertion(CsvRecord csvRecord);
     }
 }

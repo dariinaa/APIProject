@@ -1000,3 +1000,906 @@ Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such col
 2024-01-25 16:51:16.094 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 11.8169ms
 2024-01-25 16:51:16.100 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
 2024-01-25 16:51:16.104 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 32.1429ms
+2024-01-25 17:13:29.164 +02:00 [INF] The database was initialized.
+2024-01-25 17:13:29.384 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 17:13:29.389 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 17:13:29.393 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 17:13:29.395 +02:00 [INF] Hosting environment: Development
+2024-01-25 17:13:29.396 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 17:13:30.131 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 17:13:31.096 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 970.9892ms
+2024-01-25 17:13:31.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 17:13:31.159 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 45.2149ms
+2024-01-25 17:13:31.168 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 17:13:31.240 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 71.5424ms
+2024-01-25 17:13:31.744 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 17:13:32.009 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 265.4637ms
+2024-01-25 17:13:40.287 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 17:13:40.327 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:13:40.371 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:13:40.392 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 17:13:40.402 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 17:13:40.423 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 42.1507ms
+2024-01-25 17:13:40.427 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:13:40.428 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 140.6481ms
+2024-01-25 17:13:48.300 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 6
+2024-01-25 17:13:48.308 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 17:13:48.310 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:13:48.328 +02:00 [INF] Route matched with {action = "InsertIndustry", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertIndustry(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:13:48.514 +02:00 [INF] Industry '2222' inserted into the database.
+2024-01-25 17:13:48.517 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 17:13:48.519 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API) in 184.8522ms
+2024-01-25 17:13:48.524 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:13:48.525 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 6 - 200 - text/plain;+charset=utf-8 225.6737ms
+2024-01-25 17:14:15.610 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 17:14:15.613 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:14:15.615 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:14:15.623 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 17:14:15.626 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 17:14:15.630 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 10.6579ms
+2024-01-25 17:14:15.637 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:14:15.639 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 29.3498ms
+2024-01-25 17:29:04.278 +02:00 [INF] The database was initialized.
+2024-01-25 17:29:04.457 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 17:29:04.463 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 17:29:04.468 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 17:29:04.470 +02:00 [INF] Hosting environment: Development
+2024-01-25 17:29:04.471 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 17:29:04.631 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 17:29:05.049 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 418.1660ms
+2024-01-25 17:29:05.073 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 17:29:05.085 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 12.4686ms
+2024-01-25 17:29:05.103 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 17:29:05.121 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.8357ms
+2024-01-25 17:29:05.426 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 17:29:05.605 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.2821ms
+2024-01-25 17:29:18.663 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 17:29:18.674 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:29:18.722 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:29:18.742 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 17:29:18.752 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 17:29:18.771 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 38.3891ms
+2024-01-25 17:29:18.775 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:29:18.777 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 113.8150ms
+2024-01-25 17:29:30.155 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 10
+2024-01-25 17:29:30.164 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 17:29:30.168 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:29:30.192 +02:00 [INF] Route matched with {action = "InsertIndustry", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertIndustry(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:29:30.320 +02:00 [INF] Industry 'Plastics' inserted into the database.
+2024-01-25 17:29:30.322 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 17:29:30.325 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API) in 129.7128ms
+2024-01-25 17:29:30.327 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:29:30.329 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 10 - 200 - text/plain;+charset=utf-8 173.6774ms
+2024-01-25 17:29:39.989 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 17:29:39.991 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:29:39.994 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:29:40.002 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 17:29:40.003 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 17:29:40.009 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 10.372ms
+2024-01-25 17:29:40.011 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:29:40.015 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 25.9144ms
+2024-01-25 17:32:28.689 +02:00 [INF] The database was initialized.
+2024-01-25 17:32:28.936 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 17:32:28.939 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 17:32:28.943 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 17:32:28.945 +02:00 [INF] Hosting environment: Development
+2024-01-25 17:32:28.945 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 17:32:29.557 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 17:32:30.189 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 634.3114ms
+2024-01-25 17:32:30.192 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 17:32:30.235 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 43.8172ms
+2024-01-25 17:32:30.239 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 17:32:30.271 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.9949ms
+2024-01-25 17:32:30.688 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 17:32:30.870 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 181.8118ms
+2024-01-25 17:32:42.726 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 10
+2024-01-25 17:32:42.731 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 17:32:42.740 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:32:42.782 +02:00 [INF] Route matched with {action = "InsertIndustry", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertIndustry(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:32:42.832 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 17:32:42.841 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API) in 50.9539ms
+2024-01-25 17:32:42.847 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:32:42.849 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 10 - 200 - text/plain;+charset=utf-8 123.6639ms
+2024-01-25 17:32:47.460 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 17:32:47.467 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:32:47.482 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:32:47.493 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 17:32:47.496 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 17:32:47.504 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 18.7129ms
+2024-01-25 17:32:47.507 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:32:47.511 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 50.9253ms
+2024-01-25 17:33:04.460 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=2222 - -
+2024-01-25 17:33:04.463 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 17:33:04.465 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 17:33:04.481 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:33:04.643 +02:00 [INF] Industry '2222' deleted from the database.
+2024-01-25 17:33:04.645 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 17:33:04.647 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API) in 161.1225ms
+2024-01-25 17:33:04.649 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 17:33:04.651 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=2222 - - - 200 - text/plain;+charset=utf-8 191.2274ms
+2024-01-25 17:33:09.249 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 17:33:09.251 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:33:09.254 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:33:09.261 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 17:33:09.264 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 17:33:09.266 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 7.3938ms
+2024-01-25 17:33:09.268 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:33:09.284 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 36.7727ms
+2024-01-25 17:33:15.061 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 10
+2024-01-25 17:33:15.063 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 17:33:15.064 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:33:15.066 +02:00 [INF] Route matched with {action = "InsertIndustry", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertIndustry(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:33:15.075 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 17:33:15.078 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API) in 5.8835ms
+2024-01-25 17:33:15.082 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:33:15.090 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 10 - 200 - text/plain;+charset=utf-8 28.2710ms
+2024-01-25 17:33:19.322 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 17:33:19.328 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:33:19.330 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:33:19.343 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 17:33:19.345 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 17:33:19.347 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 4.6188ms
+2024-01-25 17:33:19.351 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:33:19.354 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 31.8765ms
+2024-01-25 17:34:30.178 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 5
+2024-01-25 17:34:30.181 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 17:34:30.182 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:34:30.184 +02:00 [INF] Route matched with {action = "InsertIndustry", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertIndustry(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:34:30.544 +02:00 [INF] Industry 'ass' inserted into the database.
+2024-01-25 17:34:30.552 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 17:34:30.554 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API) in 363.9245ms
+2024-01-25 17:34:30.555 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:34:30.557 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 5 - 200 - text/plain;+charset=utf-8 379.3398ms
+2024-01-25 17:34:35.075 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 17:34:35.079 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:34:35.080 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:34:35.087 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 17:34:35.089 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 17:34:35.091 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 5.3299ms
+2024-01-25 17:34:35.094 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:34:35.098 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 22.5659ms
+2024-01-25 17:34:37.883 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 5
+2024-01-25 17:34:37.884 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 17:34:37.886 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:34:37.887 +02:00 [INF] Route matched with {action = "InsertIndustry", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertIndustry(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:34:37.891 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 17:34:37.896 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API) in 4.9341ms
+2024-01-25 17:34:37.901 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.InsertIndustry (Companies.API)'
+2024-01-25 17:34:37.904 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Industry/insert-industry application/json 5 - 200 - text/plain;+charset=utf-8 21.2846ms
+2024-01-25 17:34:45.824 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 17:34:45.829 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:34:45.831 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 17:34:45.836 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 17:34:45.838 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 17:34:45.842 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 6.1676ms
+2024-01-25 17:34:45.848 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 17:34:45.851 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 27.3039ms
+2024-01-25 18:16:24.439 +02:00 [INF] The database was initialized.
+2024-01-25 18:16:24.629 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 18:16:24.634 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 18:16:24.639 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 18:16:24.641 +02:00 [INF] Hosting environment: Development
+2024-01-25 18:16:24.642 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 18:16:25.102 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 18:16:25.456 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 357.4197ms
+2024-01-25 18:16:25.507 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 18:16:25.513 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 6.3425ms
+2024-01-25 18:16:25.533 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 18:16:25.550 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.7368ms
+2024-01-25 18:16:26.000 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 18:16:26.191 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 191.0271ms
+2024-01-25 18:16:36.754 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 18:16:36.780 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 26.0201ms
+2024-01-25 18:16:36.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 18:16:36.826 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 18:16:36.829 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 3.1102ms
+2024-01-25 18:16:36.843 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.8870ms
+2024-01-25 18:16:37.081 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 18:16:37.129 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 48.2809ms
+2024-01-25 18:17:05.663 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 236
+2024-01-25 18:17:05.669 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:17:05.678 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:17:05.724 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:17:05.890 +02:00 [INF] Company 'aa' inserted into the database.
+2024-01-25 18:17:05.972 +02:00 [INF] Industry 'nz' inserted into the database.
+2024-01-25 18:17:06.110 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:17:06.125 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 385.4172ms
+2024-01-25 18:17:06.129 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:17:06.131 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 236 - 200 - text/plain;+charset=utf-8 467.2468ms
+2024-01-25 18:17:12.582 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:17:12.589 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:17:12.604 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:17:12.617 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:17:12.621 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:17:12.628 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 19.3036ms
+2024-01-25 18:17:12.637 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:17:12.640 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 57.5225ms
+2024-01-25 18:37:03.880 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 236
+2024-01-25 18:37:03.882 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:37:03.886 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:37:03.888 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:37:03.898 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:37:03.906 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 12.1927ms
+2024-01-25 18:37:03.915 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:37:03.926 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 236 - 200 - text/plain;+charset=utf-8 46.7093ms
+2024-01-25 18:37:10.545 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:37:10.581 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:37:10.582 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:37:10.592 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:37:10.593 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:37:10.595 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 5.025ms
+2024-01-25 18:37:10.598 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:37:10.599 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 54.6811ms
+2024-01-25 18:37:38.108 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 289
+2024-01-25 18:37:38.111 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:37:38.137 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:37:38.156 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:37:38.554 +02:00 [INF] Company 'aa' inserted into the database.
+2024-01-25 18:37:38.653 +02:00 [INF] Industry 'nz1' inserted into the database.
+2024-01-25 18:37:38.827 +02:00 [INF] Industry 'nz1' inserted into the database.
+2024-01-25 18:37:38.890 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: CompanyIndustry.CompanyId, CompanyIndustry.IndustryId'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 39
+2024-01-25 18:37:38.951 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:37:38.955 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 794.1313ms
+2024-01-25 18:37:38.957 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:37:38.959 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 289 - 200 - text/plain;+charset=utf-8 851.8014ms
+2024-01-25 18:37:45.081 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:37:45.085 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:37:45.087 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:37:45.100 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:37:45.103 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:37:45.105 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 10.989ms
+2024-01-25 18:37:45.108 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:37:45.110 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 28.7862ms
+2024-01-25 18:38:00.058 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 289
+2024-01-25 18:38:00.059 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:38:00.062 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:38:00.065 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:38:00.071 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:38:00.072 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 2.6766ms
+2024-01-25 18:38:00.076 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:38:00.083 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 289 - 200 - text/plain;+charset=utf-8 25.4687ms
+2024-01-25 18:38:04.447 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:38:04.449 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:38:04.452 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:38:04.459 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:38:04.465 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:38:04.468 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 10.0452ms
+2024-01-25 18:38:04.471 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:38:04.473 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 26.0567ms
+2024-01-25 18:39:56.740 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 289
+2024-01-25 18:39:56.742 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:39:56.743 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:39:56.790 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:39:56.795 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:39:56.800 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 5.1585ms
+2024-01-25 18:39:56.804 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:39:56.806 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 289 - 200 - text/plain;+charset=utf-8 65.4121ms
+2024-01-25 18:39:58.128 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 289
+2024-01-25 18:39:58.130 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:39:58.132 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:39:58.136 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:39:58.140 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:39:58.144 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 5.0951ms
+2024-01-25 18:39:58.157 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:39:58.160 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 289 - 200 - text/plain;+charset=utf-8 31.9750ms
+2024-01-25 18:40:00.647 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:40:00.652 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:40:00.654 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:40:00.661 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:40:00.662 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:40:00.671 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 10.3205ms
+2024-01-25 18:40:00.674 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:40:00.676 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 28.1619ms
+2024-01-25 18:40:08.387 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 291
+2024-01-25 18:40:08.389 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:40:08.391 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:40:08.393 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:40:08.541 +02:00 [INF] Company 'aa' inserted into the database.
+2024-01-25 18:40:08.624 +02:00 [INF] Industry 'nz2' inserted into the database.
+2024-01-25 18:40:08.784 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:40:08.786 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 385.2984ms
+2024-01-25 18:40:08.788 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:40:08.790 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 291 - 200 - text/plain;+charset=utf-8 402.8531ms
+2024-01-25 18:40:11.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:40:11.969 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:40:11.971 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:40:11.980 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:40:11.984 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:40:11.988 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 10.4325ms
+2024-01-25 18:40:11.991 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:40:11.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 26.2178ms
+2024-01-25 18:40:32.483 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - -
+2024-01-25 18:40:32.486 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:40:32.487 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:40:32.503 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:40:32.521 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 39
+2024-01-25 18:40:32.534 +02:00 [INF] Industry 'nz1' deleted from the database.
+2024-01-25 18:40:32.535 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:40:32.537 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API) in 30.0565ms
+2024-01-25 18:40:32.540 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:40:32.549 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - - - 200 - text/plain;+charset=utf-8 66.0327ms
+2024-01-25 18:40:42.413 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 291
+2024-01-25 18:40:42.415 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:40:42.416 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:40:42.418 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:40:42.426 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:40:42.430 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 6.4988ms
+2024-01-25 18:40:42.435 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:40:42.437 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 291 - 200 - text/plain;+charset=utf-8 24.5214ms
+2024-01-25 18:40:46.512 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:40:46.514 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:40:46.517 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:40:46.523 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:40:46.532 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:40:46.535 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 12.4687ms
+2024-01-25 18:40:46.538 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:40:46.540 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 27.5618ms
+2024-01-25 18:40:58.554 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - -
+2024-01-25 18:40:58.556 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:40:58.581 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:40:58.585 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:40:58.614 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 39
+2024-01-25 18:40:58.625 +02:00 [INF] Industry 'nz1' deleted from the database.
+2024-01-25 18:40:58.627 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:40:58.631 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API) in 30.2178ms
+2024-01-25 18:40:58.634 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:40:58.636 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - - - 200 - text/plain;+charset=utf-8 82.3243ms
+2024-01-25 18:41:02.585 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:41:02.586 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:41:02.590 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:41:02.596 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:41:02.603 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:41:02.608 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 13.1536ms
+2024-01-25 18:41:02.614 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:41:02.616 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 31.7761ms
+2024-01-25 18:41:10.547 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - -
+2024-01-25 18:41:10.550 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:41:10.551 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:41:10.555 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:41:10.565 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 39
+2024-01-25 18:41:10.579 +02:00 [INF] Industry 'nz1' deleted from the database.
+2024-01-25 18:41:10.580 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:41:10.583 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API) in 22.7498ms
+2024-01-25 18:41:10.596 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:41:10.598 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - - - 200 - text/plain;+charset=utf-8 50.6391ms
+2024-01-25 18:41:11.032 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - -
+2024-01-25 18:41:11.034 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:41:11.036 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:41:11.040 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:41:11.050 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 39
+2024-01-25 18:41:11.064 +02:00 [INF] Industry 'nz1' deleted from the database.
+2024-01-25 18:41:11.065 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:41:11.067 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API) in 22.6814ms
+2024-01-25 18:41:11.070 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:41:11.077 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - - - 200 - text/plain;+charset=utf-8 45.3668ms
+2024-01-25 18:41:11.456 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - -
+2024-01-25 18:41:11.458 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:41:11.482 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:41:11.488 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:41:11.500 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 39
+2024-01-25 18:41:11.512 +02:00 [INF] Industry 'nz1' deleted from the database.
+2024-01-25 18:41:11.514 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:41:11.516 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API) in 18.8065ms
+2024-01-25 18:41:11.519 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.DeleteIndustryByName (Companies.API)'
+2024-01-25 18:41:11.526 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Industry/delete-industry-by-name?industryName=nz1 - - - 200 - text/plain;+charset=utf-8 69.4848ms
+2024-01-25 18:41:13.529 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:41:13.531 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:41:13.533 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:41:13.545 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:41:13.546 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:41:13.548 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 3.2836ms
+2024-01-25 18:41:13.550 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:41:13.552 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 23.0738ms
+2024-01-25 18:42:16.850 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 291
+2024-01-25 18:42:16.852 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:42:16.853 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:42:16.855 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:42:16.861 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:42:16.867 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 6.9909ms
+2024-01-25 18:42:16.873 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:42:16.875 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 291 - 200 - text/plain;+charset=utf-8 25.5409ms
+2024-01-25 18:42:20.666 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:42:20.668 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:42:20.673 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:42:20.684 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:42:20.685 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:42:20.688 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 9.9433ms
+2024-01-25 18:42:20.691 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:42:20.692 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 25.8381ms
+2024-01-25 18:42:32.583 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 290
+2024-01-25 18:42:32.585 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:42:32.586 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:42:32.589 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:42:32.716 +02:00 [INF] Company 'aa' inserted into the database.
+2024-01-25 18:42:32.799 +02:00 [INF] Industry 'nz4' inserted into the database.
+2024-01-25 18:42:32.946 +02:00 [INF] Industry 'nz4' inserted into the database.
+2024-01-25 18:42:32.948 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: CompanyIndustry.CompanyId, CompanyIndustry.IndustryId'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 39
+2024-01-25 18:42:32.956 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:42:32.958 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 358.9821ms
+2024-01-25 18:42:32.961 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:42:32.965 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 290 - 200 - text/plain;+charset=utf-8 382.1761ms
+2024-01-25 18:42:37.225 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:42:37.230 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:42:37.233 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:42:37.243 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:42:37.251 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:42:37.256 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 13.9399ms
+2024-01-25 18:42:37.268 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:42:37.271 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 45.9884ms
+2024-01-25 18:53:16.567 +02:00 [INF] The database was initialized.
+2024-01-25 18:53:16.766 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 18:53:16.771 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 18:53:16.776 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 18:53:16.777 +02:00 [INF] Hosting environment: Development
+2024-01-25 18:53:16.778 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 18:53:16.943 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 18:53:17.368 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 425.8946ms
+2024-01-25 18:53:17.387 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 18:53:17.404 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 13.7940ms
+2024-01-25 18:53:17.440 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 18:53:17.462 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.8525ms
+2024-01-25 18:53:17.818 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 18:53:17.962 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.7152ms
+2024-01-25 18:53:44.729 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 307
+2024-01-25 18:53:44.735 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 18:53:44.743 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:53:44.788 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 18:53:44.984 +02:00 [INF] Company 'string' inserted into the database.
+2024-01-25 18:53:45.083 +02:00 [INF] Industry '11' inserted into the database.
+2024-01-25 18:53:45.284 +02:00 [INF] Industry '11' inserted into the database.
+2024-01-25 18:53:45.290 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: CompanyIndustry.CompanyId, CompanyIndustry.IndustryId'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 39
+2024-01-25 18:53:45.335 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 18:53:45.344 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 547.0331ms
+2024-01-25 18:53:45.356 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 18:53:45.357 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 307 - 200 - text/plain;+charset=utf-8 628.3431ms
+2024-01-25 18:53:51.017 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 18:53:51.024 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:53:51.036 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 18:53:51.049 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 18:53:51.051 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 18:53:51.059 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 17.8957ms
+2024-01-25 18:53:51.067 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 18:53:51.070 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 52.9790ms
+2024-01-25 19:14:23.437 +02:00 [INF] The database was initialized.
+2024-01-25 19:14:23.614 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 19:14:23.618 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 19:14:23.622 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 19:14:23.624 +02:00 [INF] Hosting environment: Development
+2024-01-25 19:14:23.625 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 19:14:24.185 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 19:14:24.565 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 382.2116ms
+2024-01-25 19:14:24.609 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 19:14:24.618 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 9.0638ms
+2024-01-25 19:14:24.658 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 19:14:24.679 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.1343ms
+2024-01-25 19:14:25.094 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 19:14:25.236 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.4606ms
+2024-01-25 19:14:33.970 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:14:33.998 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:14:34.035 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:14:34.069 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:14:34.084 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:14:34.114 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 67.7287ms
+2024-01-25 19:14:34.121 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:14:34.122 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 152.3619ms
+2024-01-25 19:18:17.839 +02:00 [INF] The database was initialized.
+2024-01-25 19:18:18.011 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 19:18:18.016 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 19:18:18.020 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 19:18:18.022 +02:00 [INF] Hosting environment: Development
+2024-01-25 19:18:18.024 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 19:18:18.563 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 19:18:18.864 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 299.9240ms
+2024-01-25 19:18:18.896 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 19:18:18.911 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 15.5612ms
+2024-01-25 19:18:18.952 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 19:18:18.975 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.1103ms
+2024-01-25 19:18:19.286 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 19:18:19.436 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.2622ms
+2024-01-25 19:18:35.493 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:18:35.507 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:18:35.549 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:18:35.584 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:18:35.592 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:18:35.619 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 57.2226ms
+2024-01-25 19:18:35.624 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:18:35.625 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 131.9103ms
+2024-01-25 19:19:10.752 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=aaaa - -
+2024-01-25 19:19:10.768 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:19:10.771 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:10.786 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:19:10.823 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 40
+2024-01-25 19:19:10.850 +02:00 [INF] Company with OrganizationId 'aaaa' deleted from the database.
+2024-01-25 19:19:10.852 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:19:10.854 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API) in 63.7594ms
+2024-01-25 19:19:10.857 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:10.863 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=aaaa - - - 200 - text/plain;+charset=utf-8 111.0462ms
+2024-01-25 19:19:13.568 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:19:13.572 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:19:13.574 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:19:13.586 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:19:13.588 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:19:13.590 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 7.6946ms
+2024-01-25 19:19:13.598 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:19:13.600 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 31.6179ms
+2024-01-25 19:19:34.673 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=123456543 - -
+2024-01-25 19:19:34.677 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:19:34.680 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:34.683 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:19:34.701 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 40
+2024-01-25 19:19:34.714 +02:00 [INF] Company with OrganizationId '123456543' deleted from the database.
+2024-01-25 19:19:34.715 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:19:34.718 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API) in 30.8705ms
+2024-01-25 19:19:34.721 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:34.729 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=123456543 - - - 200 - text/plain;+charset=utf-8 56.6578ms
+2024-01-25 19:19:35.345 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=123456543 - -
+2024-01-25 19:19:35.347 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:19:35.349 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:35.351 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:19:35.369 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 40
+2024-01-25 19:19:35.381 +02:00 [INF] Company with OrganizationId '123456543' deleted from the database.
+2024-01-25 19:19:35.382 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:19:35.385 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API) in 22.6244ms
+2024-01-25 19:19:35.388 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:35.395 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=123456543 - - - 200 - text/plain;+charset=utf-8 49.9464ms
+2024-01-25 19:19:35.501 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=123456543 - -
+2024-01-25 19:19:35.503 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:19:35.505 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:35.531 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:19:35.547 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 40
+2024-01-25 19:19:35.559 +02:00 [INF] Company with OrganizationId '123456543' deleted from the database.
+2024-01-25 19:19:35.562 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:19:35.564 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API) in 19.7601ms
+2024-01-25 19:19:35.568 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:35.569 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=123456543 - - - 200 - text/plain;+charset=utf-8 68.4497ms
+2024-01-25 19:19:35.659 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=123456543 - -
+2024-01-25 19:19:35.661 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:19:35.664 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:35.668 +02:00 [INF] Route matched with {action = "DeleteIndustryByName", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteIndustryByName(System.String) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:19:35.683 +02:00 [ERR] an exception occured while trying to execute the command.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at System.Data.Common.DbCommand.ExecuteNonQueryAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Companies.Domain.Services.DataBaseContext.ExequteSqliteCommand(String commandText, SqliteConnection connection, Dictionary`2 parameters) in D:\uni\semester_3\API\APIProject\Companies.Domain.Services\DataBaseContext.cs:line 40
+2024-01-25 19:19:35.696 +02:00 [INF] Company with OrganizationId '123456543' deleted from the database.
+2024-01-25 19:19:35.700 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:19:35.702 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API) in 26.1986ms
+2024-01-25 19:19:35.708 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.DeleteIndustryByName (Companies.API)'
+2024-01-25 19:19:35.711 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-name?companyName=123456543 - - - 200 - text/plain;+charset=utf-8 52.6828ms
+2024-01-25 19:19:38.853 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:19:38.857 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:19:38.861 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:19:38.868 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:19:38.870 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:19:38.879 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 12.9292ms
+2024-01-25 19:19:38.883 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:19:38.886 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 32.8097ms
+2024-01-25 19:25:09.151 +02:00 [INF] The database was initialized.
+2024-01-25 19:25:09.358 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 19:25:09.366 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 19:25:09.372 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 19:25:09.374 +02:00 [INF] Hosting environment: Development
+2024-01-25 19:25:09.375 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 19:25:09.767 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 19:25:10.475 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 712.1046ms
+2024-01-25 19:25:10.479 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 19:25:10.505 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 23.0095ms
+2024-01-25 19:25:10.511 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 19:25:10.542 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.7031ms
+2024-01-25 19:25:10.891 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 19:25:11.088 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 197.5382ms
+2024-01-25 19:25:25.880 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:25:25.893 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:25:25.928 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:25:25.956 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:25:25.968 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:25:25.990 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 52.2142ms
+2024-01-25 19:25:25.995 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:25:25.999 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 118.9409ms
+2024-01-25 19:25:42.843 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-organization-id?organizationId=123456543 - -
+2024-01-25 19:25:42.851 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:25:42.854 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.DeleteCompanyByOrganizationId (Companies.API)'
+2024-01-25 19:25:42.873 +02:00 [INF] Route matched with {action = "DeleteCompanyByOrganizationId", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteCompanyByOrganizationId(System.String) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:25:43.135 +02:00 [INF] Company with OrganizationId '123456543' deleted from the database.
+2024-01-25 19:25:43.137 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:25:43.139 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.DeleteCompanyByOrganizationId (Companies.API) in 257.8741ms
+2024-01-25 19:25:43.142 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.DeleteCompanyByOrganizationId (Companies.API)'
+2024-01-25 19:25:43.157 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-organization-id?organizationId=123456543 - - - 200 - text/plain;+charset=utf-8 313.3344ms
+2024-01-25 19:25:49.728 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:25:49.783 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:25:49.787 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:25:49.812 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:25:49.815 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:25:49.819 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 13.0851ms
+2024-01-25 19:25:49.821 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:25:49.822 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 94.4709ms
+2024-01-25 19:26:10.295 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 19:26:10.300 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 19:26:10.317 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 19:26:10.331 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 19:26:10.332 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:26:10.337 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 16.4534ms
+2024-01-25 19:26:10.340 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 19:26:10.346 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 51.6111ms
+2024-01-25 19:26:37.260 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 323
+2024-01-25 19:26:37.262 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:26:37.263 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 19:26:37.275 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:26:37.442 +02:00 [INF] Company 'string' inserted into the database.
+2024-01-25 19:26:37.445 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:26:37.447 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 166.3191ms
+2024-01-25 19:26:37.450 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 19:26:37.484 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 323 - 200 - text/plain;+charset=utf-8 223.8625ms
+2024-01-25 19:26:42.699 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:26:42.701 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:26:42.703 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:26:42.711 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:26:42.714 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:26:42.717 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 7.4352ms
+2024-01-25 19:26:42.719 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:26:42.729 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 29.4010ms
+2024-01-25 19:27:29.576 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-organization-id?organizationId=a2aaa - -
+2024-01-25 19:27:29.579 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:27:29.581 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.DeleteCompanyByOrganizationId (Companies.API)'
+2024-01-25 19:27:29.585 +02:00 [INF] Route matched with {action = "DeleteCompanyByOrganizationId", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteCompanyByOrganizationId(System.String) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:27:30.082 +02:00 [INF] Company with OrganizationId 'a2aaa' deleted from the database.
+2024-01-25 19:27:30.084 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:27:30.087 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.DeleteCompanyByOrganizationId (Companies.API) in 496.732ms
+2024-01-25 19:27:30.090 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.DeleteCompanyByOrganizationId (Companies.API)'
+2024-01-25 19:27:30.093 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-organization-id?organizationId=a2aaa - - - 200 - text/plain;+charset=utf-8 516.7293ms
+2024-01-25 19:27:38.248 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 19:27:38.256 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 19:27:38.258 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 19:27:38.269 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 19:27:38.271 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:27:38.274 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 5.4081ms
+2024-01-25 19:27:38.276 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 19:27:38.278 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 29.6344ms
+2024-01-25 19:28:01.161 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 283
+2024-01-25 19:28:01.164 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:28:01.166 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 19:28:01.169 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:28:01.274 +02:00 [INF] Company 'string' inserted into the database.
+2024-01-25 19:28:01.357 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:28:01.364 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 183.5724ms
+2024-01-25 19:28:01.369 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 19:28:01.371 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 283 - 200 - text/plain;+charset=utf-8 209.3600ms
+2024-01-25 19:28:08.203 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:28:08.204 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:28:08.206 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:28:08.214 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:28:08.216 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:28:08.220 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 6.9244ms
+2024-01-25 19:28:08.225 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:28:08.238 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 35.2860ms
+2024-01-25 19:28:15.316 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 19:28:15.318 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 19:28:15.321 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 19:28:15.329 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 19:28:15.330 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:28:15.334 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 7.2597ms
+2024-01-25 19:28:15.347 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 19:28:15.352 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 35.5975ms
+2024-01-25 19:46:43.833 +02:00 [INF] The database was initialized.
+2024-01-25 19:46:44.006 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 19:46:44.012 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 19:46:44.020 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 19:46:44.022 +02:00 [INF] Hosting environment: Development
+2024-01-25 19:46:44.025 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 19:46:44.163 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 19:46:44.697 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 19:46:44.700 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 537.6585ms
+2024-01-25 19:46:44.744 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 24.2130ms
+2024-01-25 19:46:44.750 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 19:46:44.791 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.0264ms
+2024-01-25 19:46:45.171 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 19:46:45.428 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 257.6576ms
+2024-01-25 19:46:54.341 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:46:54.358 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:46:54.397 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:46:54.429 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:46:54.436 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:46:54.461 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 52.6892ms
+2024-01-25 19:46:54.465 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:46:54.466 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 124.3562ms
+2024-01-25 19:47:19.972 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7022/api/Company/update-company application/json 274
+2024-01-25 19:47:19.980 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 19:47:19.982 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.UpdateCompany (Companies.API)'
+2024-01-25 19:47:20.000 +02:00 [INF] Route matched with {action = "UpdateCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:47:20.273 +02:00 [INF] Company with OrganizationId 'aaaa' updated in the database.
+2024-01-25 19:47:20.276 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 19:47:20.278 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.UpdateCompany (Companies.API) in 269.7076ms
+2024-01-25 19:47:20.281 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.UpdateCompany (Companies.API)'
+2024-01-25 19:47:20.283 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7022/api/Company/update-company application/json 274 - 200 - text/plain;+charset=utf-8 311.4775ms
+2024-01-25 19:47:23.356 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 19:47:23.359 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:47:23.398 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 19:47:23.423 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 19:47:23.424 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 19:47:23.428 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 13.2154ms
+2024-01-25 19:47:23.430 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 19:47:23.433 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 76.1346ms
+2024-01-25 20:08:46.251 +02:00 [INF] The database was initialized.
+2024-01-25 20:08:46.425 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 20:08:46.430 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 20:08:46.434 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 20:08:46.436 +02:00 [INF] Hosting environment: Development
+2024-01-25 20:08:46.437 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 20:08:46.624 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 20:08:47.046 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 421.4835ms
+2024-01-25 20:08:47.063 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 20:08:47.078 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 13.3837ms
+2024-01-25 20:08:47.121 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 20:08:47.142 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.5569ms
+2024-01-25 20:08:47.542 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 20:08:47.707 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 165.0059ms
+2024-01-25 21:12:16.197 +02:00 [INF] The database was initialized.
+2024-01-25 21:12:16.372 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-25 21:12:16.377 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-25 21:12:16.381 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-25 21:12:16.383 +02:00 [INF] Hosting environment: Development
+2024-01-25 21:12:16.384 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-25 21:12:16.999 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 21:12:17.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 302.3171ms
+2024-01-25 21:12:17.322 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 21:12:17.336 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 12.7114ms
+2024-01-25 21:12:17.360 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 21:12:17.377 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.6098ms
+2024-01-25 21:12:17.734 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 21:12:17.880 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 145.9138ms
+2024-01-25 21:12:22.489 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-25 21:12:22.560 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 70.2886ms
+2024-01-25 21:12:22.581 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-25 21:12:22.582 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-25 21:12:22.593 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12357 application/javascript;+charset=utf-8 11.7281ms
+2024-01-25 21:12:22.614 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.9314ms
+2024-01-25 21:12:22.895 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-25 21:12:22.951 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 56.2566ms
+2024-01-25 21:12:30.001 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 21:12:30.011 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 21:12:30.050 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 21:12:30.074 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 21:12:30.082 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 21:12:30.101 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 38.6056ms
+2024-01-25 21:12:30.109 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 21:12:30.111 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 110.1891ms
+2024-01-25 21:13:07.850 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 270
+2024-01-25 21:13:07.860 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-25 21:13:07.862 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 21:13:07.896 +02:00 [INF] Route matched with {action = "InsertCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCompany(Companies.Infrastructure.Entities.Company) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 21:13:08.337 +02:00 [INF] Company 'string' inserted into the database.
+2024-01-25 21:13:08.437 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-25 21:13:08.443 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.InsertCompany (Companies.API) in 539.7014ms
+2024-01-25 21:13:08.445 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.InsertCompany (Companies.API)'
+2024-01-25 21:13:08.447 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Company/insert-company application/json 270 - 200 - text/plain;+charset=utf-8 596.5151ms
+2024-01-25 21:13:13.810 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 21:13:13.816 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 21:13:13.819 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 21:13:13.825 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 21:13:13.829 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 21:13:13.838 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 14.7246ms
+2024-01-25 21:13:13.841 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 21:13:13.843 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 32.5098ms
+2024-01-25 21:13:28.540 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-25 21:13:28.547 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 21:13:28.555 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-25 21:13:28.576 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-25 21:13:28.580 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 21:13:28.589 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 28.6697ms
+2024-01-25 21:13:28.591 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-25 21:13:28.593 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 53.1728ms
+2024-01-25 21:13:42.150 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-25 21:13:42.152 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 21:13:42.192 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-25 21:13:42.215 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-25 21:13:42.216 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Entities.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-25 21:13:42.220 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 11.2479ms
+2024-01-25 21:13:42.223 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-25 21:13:42.225 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 75.9630ms

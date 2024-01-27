@@ -1,4 +1,6 @@
 ﻿using Companies.Domain.Abstraction;
+using Companies.Domain.Abstraction.Services;
+using Companies.Infrastructure.Models;
 using Microsoft.Data.Sqlite;
 using Serilog;
 using System;
@@ -24,7 +26,6 @@ namespace Companies.Domain.Services
             return _connection;
         }
 
-        //execute sqlite command
         public async Task ExequteSqliteCommand(string commandText, SqliteConnection connection,
             Dictionary<string, object> parameters)
         {
@@ -45,13 +46,31 @@ namespace Companies.Domain.Services
             }
         }
 
+        public async Task ResetDatabase()
+        {
+            try
+            {
+                await ExequteSqliteCommand("DROP TABLE IF EXISTS Companies", _connection, new Dictionary<string, object>());
+                await ExequteSqliteCommand("DROP TABLE IF EXISTS Industries", _connection, new Dictionary<string, object>());
+                await ExequteSqliteCommand("DROP TABLE IF EXISTS CompanyIndustry", _connection, new Dictionary<string, object>());
+
+                Log.Information("The database tables were dropped.");
+
+                await InitializeDatabase();
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "An exception occurred while trying to reset the database.");
+            }
+        }
+
         public async Task InitializeDatabase()
         {
             try
             {
                 await ExequteSqliteCommand("CREATE TABLE IF NOT EXISTS Companies " +
-                    "(Id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "OrganizationId TEXT, Name TEXT, Website TEXT, Country TEXT, " +
+                    "(Id INTEGER, " +
+                    "OrganizationId TEXT PRIMARY KEY, Name TEXT, Website TEXT, Country TEXT, " +
                     "Description TEXT, Founded INTEGER, Industry TEXT, Employees INTEGER)",
                     _connection, new Dictionary<string, object>());
 
@@ -60,10 +79,10 @@ namespace Companies.Domain.Services
                     _connection, new Dictionary<string, object>());
 
                 await ExequteSqliteCommand("CREATE TABLE IF NOT EXISTS CompanyIndustry " +
-                    "(CompanyId INTEGER, IndustryId INTEGER, " +
-                    "FOREIGN KEY (CompanyId) REFERENCES Companies (Id), " +
+                    "(OrganizationId TEXT, IndustryId INTEGER, " +
+                    "FOREIGN KEY (OrganizationId) REFERENCES Companies (OrganizationId), " +
                     "FOREIGN KEY (IndustryId) REFERENCES Industries (Id), " +
-                    "PRIMARY KEY (CompanyId, IndustryId))",
+                    "PRIMARY KEY (OrganizationId, IndustryId))",
                     _connection, new Dictionary<string, object>());
 
                 Log.Information("The database was initialized.");
@@ -74,8 +93,6 @@ namespace Companies.Domain.Services
             }
         }
 
-
-        //close and dispose of connection
         public void Dispose()
         {
             _connection.Close();

@@ -1,8 +1,8 @@
 using AutoMapper;
 using Companies.API.Middleware;
-using Companies.Domain.Abstraction;
 using Companies.Domain.Abstraction.Mappers;
 using Companies.Domain.Abstraction.Repositories;
+using Companies.Domain.Abstraction.Services;
 using Companies.Domain.Services;
 using Companies.Domain.Services.Mappers;
 using Companies.Domain.Services.Repositories;
@@ -39,6 +39,10 @@ builder.Services.AddSwaggerGen();
 //services
 builder.Services.AddScoped<IIndustryService, IndustryService>();
 builder.Services.AddScoped<IIndustryRepository, IndustryRepository>();
+builder.Services.AddScoped<ICompanyService, CompanyService>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+builder.Services.AddScoped<IReadCsvFileService, ReadCsvFileService>();
+builder.Services.AddScoped<IReadCsvFileRepository, ReadCsvFileRepository>();
 
 //logger
 Log.Logger = new LoggerConfiguration()
@@ -67,7 +71,8 @@ app.MapControllers();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<IDataBaseContext>();
-    dbContext.InitializeDatabase();
+    await dbContext.ResetDatabase();
+    //await dbContext.InitializeDatabase();
 }
 
 app.Run();

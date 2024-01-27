@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wxJUg0ytvREo3b5OSSy+XRuKHs4+To9rA5FZu0dHras/PAWHY9NzpWuqgSkyZrXv6j5javN9Hw0/4lmFJ0G4KQ==",
+  "dgSpecHash": "SGNphug5+VW6+1Z9wQKAuySqzwOgACXz+6wZx+JmCtOIBN0WRME3qyR/jwdqQS3wwYaqYH4IKD2+oYchaeOL4A==",
   "success": true,
   "projectFilePath": "D:\\uni\\semester_3\\API\\APIProject\\Companies.API\\Companies.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EliteBook\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\EliteBook\\.nuget\\packages\\csvhelper\\30.0.3\\csvhelper.30.0.3.nupkg.sha512",
     "C:\\Users\\EliteBook\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\EliteBook\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
     "C:\\Users\\EliteBook\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

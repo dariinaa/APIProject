@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lMV10eoBUVBv7a0mKXQQiWVqDZpvTjkdbi+FZ04mroDeQTtbIcvd3Lyn0Be9nCaKrAcHXccQi9MmSi/o/tVdpA==",
+  "dgSpecHash": "/FYNkUrQtbYqQpGzdAoIXiED3RKcHc16VhDsHTt8Bp5c8cEKumtBYNCE+WAGfkDkYLlfAmNFbShFZ8pmcUYxdg==",
   "success": true,
   "projectFilePath": "D:\\uni\\semester_3\\API\\APIProject\\Companies.Domain\\Companies.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EliteBook\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\EliteBook\\.nuget\\packages\\csvhelper\\30.0.3\\csvhelper.30.0.3.nupkg.sha512",
     "C:\\Users\\EliteBook\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\EliteBook\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\EliteBook\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.1\\microsoft.data.sqlite.core.8.0.1.nupkg.sha512",

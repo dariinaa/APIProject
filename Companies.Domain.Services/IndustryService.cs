@@ -1,6 +1,7 @@
 ﻿using Companies.Domain.Abstraction;
 using Companies.Domain.Abstraction.Repositories;
-using Companies.Infrastructure.Entities;
+using Companies.Domain.Abstraction.Services;
+using Companies.Infrastructure.Models;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace Companies.Domain.Services
     public class IndustryService:IIndustryService
     {
         private readonly IIndustryRepository _industryRepository;
+
         public IndustryService(IIndustryRepository industryRepository)
         {
             _industryRepository = industryRepository;
@@ -24,9 +26,9 @@ namespace Companies.Domain.Services
             await _industryRepository.InsertIndustry(industryName);
         }
 
-        public async Task UpdateIndustryName(string industryId, string newIndustryName)
+        public async Task UpdateIndustryName(IndustryInsertion industry)
         {
-            await _industryRepository.UpdateIndustryName(industryId, newIndustryName);
+            await _industryRepository.UpdateIndustryName(industry);
         }
 
         public async Task DeleteIndustryByName(string industryName)
@@ -39,6 +41,5 @@ namespace Companies.Domain.Services
             return await _industryRepository.GetAllIndustries();
 
         }
-
     }
 }

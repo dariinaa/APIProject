@@ -1,6 +1,7 @@
 ﻿using Companies.Domain.Abstraction;
+using Companies.Domain.Abstraction.Services;
 using Companies.Domain.Services;
-using Companies.Infrastructure.Entities;
+using Companies.Infrastructure.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Companies.API.Controllers
@@ -18,7 +19,7 @@ namespace Companies.API.Controllers
 
         [HttpPost]
         [Route("insert-industry")]
-        public async Task<IActionResult> InsertIndustry([FromBody] string industryName)
+        public async Task<IActionResult> InsertIndustry([FromQuery] string industryName)
         {
             try
             {
@@ -33,12 +34,12 @@ namespace Companies.API.Controllers
 
         [HttpPut]
         [Route("update-industry")]
-        public async Task<IActionResult> UpdateIndustry([FromBody] Industry request)
+        public async Task<IActionResult> UpdateIndustry([FromQuery] IndustryInsertion industry)
         {
             try
             {
-                await _industryService.UpdateIndustryName(request.Id, request.Name);
-                return Ok($"Industry with ID '{request.Id}' updated successfully.");
+                await _industryService.UpdateIndustryName(industry);
+                return Ok($"Industry with ID '{industry.Id}' updated successfully.");
             }
             catch (Exception ex)
             {

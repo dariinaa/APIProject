@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Companies.Infrastructure.Entities
+namespace Companies.Infrastructure.Models
 {
     public class Company
     {
@@ -14,9 +14,8 @@ namespace Companies.Infrastructure.Entities
         public string Website { get; set; }
         public string Country { get; set; }
         public string Description { get; set; }
-        public int Founded { get; set; }
-
-        //public string Industry { get; set; }
-        public int Employees { get; set; }
+        public string Founded { get; set; }
+        public List<Industry> Industries { get; set; }
+        public string Employees { get; set; }
     }
 }
