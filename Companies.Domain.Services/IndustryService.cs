@@ -26,9 +26,9 @@ namespace Companies.Domain.Services
             await _industryRepository.InsertIndustry(industryName);
         }
 
-        public async Task UpdateIndustryName(IndustryInsertion industry)
+        public async Task UpdateIndustryName(string currentName, string newName)
         {
-            await _industryRepository.UpdateIndustryName(industry);
+            await _industryRepository.UpdateIndustryName(currentName, newName);
         }
 
         public async Task DeleteIndustryByName(string industryName)
@@ -39,7 +39,6 @@ namespace Companies.Domain.Services
         public async Task<IEnumerable<Industry>> GetAllIndustries()
         {
             return await _industryRepository.GetAllIndustries();
-
         }
     }
 }

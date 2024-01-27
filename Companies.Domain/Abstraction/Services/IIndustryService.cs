@@ -10,7 +10,7 @@ namespace Companies.Domain.Abstraction.Services
     public interface IIndustryService
     {
         Task InsertIndustry(string indusryName);
-        Task UpdateIndustryName(IndustryInsertion industry);
+        Task UpdateIndustryName(string currentName, string newName);
         Task DeleteIndustryByName(string industryName);
         Task<IEnumerable<Industry>> GetAllIndustries();
     }

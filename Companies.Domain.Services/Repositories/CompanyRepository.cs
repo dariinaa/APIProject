@@ -1,5 +1,4 @@
 ﻿using Companies.Domain.Abstraction.Mappers;
-using Companies.Domain.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +11,7 @@ using Microsoft.Data.Sqlite;
 using System.Data.Common;
 using System.Data;
 using Companies.Domain.Abstraction.Services;
-using Companies.Domain.Services.BulkClasses;
+using Companies.Domain.Services;
 
 namespace Companies.Domain.Services.Repositories
 {
@@ -22,11 +21,12 @@ namespace Companies.Domain.Services.Repositories
         private readonly IMyMapper _myMapper;
         private readonly HashSet<string> _uniqueOrganizationIds;
         private readonly IIndustryRepository _industryRepository;
-        private readonly SQLiteBulkInsert _companyBulkInsert;
-        private readonly SQLiteBulkInsert _pivotBulkInsert;
+        private readonly ISQLiteBulkInsert _companyBulkInsert;
+        private readonly ICompanyIndustryAssociation _companyIndustryAssociation;
 
-        public CompanyRepository(IDataBaseContext dataBaseContext, IMyMapper myMapper, IIndustryRepository industryRepository)
+        public CompanyRepository(ICompanyIndustryAssociation companyIndustryAssociation, IDataBaseContext dataBaseContext, IMyMapper myMapper, IIndustryRepository industryRepository)
         {
+            _companyIndustryAssociation = companyIndustryAssociation;
             _dataBaseContext = dataBaseContext;
             _myMapper = myMapper;
             _industryRepository = industryRepository;
@@ -35,8 +35,6 @@ namespace Companies.Domain.Services.Repositories
 
             _companyBulkInsert = new SQLiteBulkInsert( "Companies", _dataBaseContext);
             InitializeCompanyBulkInsertParameters();
-            _pivotBulkInsert = new SQLiteBulkInsert("CompanyIndustry", _dataBaseContext);
-            InitializeCompanyIndustryBulkInsertParameters();
         }
 
         private void InitializeCompanyBulkInsertParameters()
@@ -49,13 +47,6 @@ namespace Companies.Domain.Services.Repositories
             _companyBulkInsert.AddParameter("Description", DbType.String);
             _companyBulkInsert.AddParameter("Founded", DbType.Int32);
             _companyBulkInsert.AddParameter("Employees", DbType.Int32);
-        }
-
-        private void InitializeCompanyIndustryBulkInsertParameters()
-        {
-            _pivotBulkInsert.AddParameter("OrganizationId", DbType.String);
-            _pivotBulkInsert.AddParameter("IndustryId", DbType.Int32);
-
         }
 
         private void LoadUniqueOrganizationIds()
@@ -98,10 +89,10 @@ namespace Companies.Domain.Services.Repositories
 
                 await _industryRepository.InsertIndustries(company.Industries);
 
-                foreach (var industry in company.Industries)
-                {
-                    await AssociateCompanyWithIndustry(company.OrganizationId, industry.Name);
-                }
+                List<CompanyInsertion> companyList = new List<CompanyInsertion>();
+                companyList.Add(company);
+
+                await _companyIndustryAssociation.AssociateCompaniesWithIndustries(companyList);
             }
             catch (Exception ex)
             {
@@ -125,20 +116,19 @@ namespace Companies.Domain.Services.Repositories
 
             try
             {
+                await _companyIndustryAssociation.DeleteCompanyByOrganizationIdAssociations(updatedCompany.OrganizationId);
+
                 await _dataBaseContext.ExequteSqliteCommand(
                     "UPDATE Companies SET Id = @Id, Name = @Name, Website = @Website, Country = @Country, " +
                     "Description = @Description, Founded = @Founded, Employees = @Employees " +
                     "WHERE OrganizationId = @OrganizationId",
                     _dataBaseContext.GetConnection(), parameters);
 
-                await _dataBaseContext.ExequteSqliteCommand(
-                    "DELETE FROM CompanyIndustry WHERE OrganizationId = @OrganizationId",
-                    _dataBaseContext.GetConnection(), parameters);
+                await _industryRepository.InsertIndustries(updatedCompany.Industries);
 
-                foreach (var industry in updatedCompany.Industries)
-                {
-                    await AssociateCompanyWithIndustry(updatedCompany.OrganizationId, industry.Name);
-                }
+                List<CompanyInsertion> companyList = new List<CompanyInsertion>();
+                companyList.Add(updatedCompany);
+                await _companyIndustryAssociation.AssociateCompaniesWithIndustries(companyList);
 
                 Log.Information($"Company with OrganizationId '{updatedCompany.OrganizationId}' updated in the database.");
             }
@@ -157,9 +147,7 @@ namespace Companies.Domain.Services.Repositories
 
             try
             {
-                await _dataBaseContext.ExequteSqliteCommand(
-                    "DELETE FROM CompanyIndustry WHERE OrganizationId = @OrganizationId",
-                    _dataBaseContext.GetConnection(), parameters);
+                await _companyIndustryAssociation.DeleteCompanyByOrganizationIdAssociations(organizationId);
 
                 await _dataBaseContext.ExequteSqliteCommand(
                     "DELETE FROM Companies WHERE OrganizationId = @OrganizationId",
@@ -208,7 +196,7 @@ namespace Companies.Domain.Services.Repositories
             {
                 var industries = new List<Industry>();
                 var commandText = "SELECT i.* FROM Industries i " +
-                    "JOIN CompanyIndustry ci ON i.Id = ci.IndustryId " +
+                    "JOIN CompanyIndustry ci ON i.Name = ci.Name " +
                     "JOIN Companies c ON ci.OrganizationId = c.OrganizationId " +
                     "WHERE c.OrganizationId = @OrganizationId";
 
@@ -230,7 +218,6 @@ namespace Companies.Domain.Services.Repositories
                         {
                             industries.Add(new Industry
                             {
-                                Id = reader.GetString(reader.GetOrdinal("Id")),
                                 Name = reader.GetString(reader.GetOrdinal("Name"))
                             });
                         }
@@ -245,29 +232,6 @@ namespace Companies.Domain.Services.Repositories
                 return null;
             }
         }
-
-        private async Task AssociateCompanyWithIndustry(string organizationId, string industryName)
-        {
-            var parameters = new Dictionary<string, object>
-            {
-                { "@OrganizationId", organizationId },
-                { "@IndustryName", industryName }
-            };
-
-            try
-            {
-                string sqlQuery = @"INSERT INTO CompanyIndustry 
-               (OrganizationId, IndustryId)
-               SELECT @OrganizationId, Id FROM Industries WHERE Name = @IndustryName";
-
-                await _dataBaseContext.ExequteSqliteCommand(sqlQuery, _dataBaseContext.GetConnection(), parameters);
-            }
-            catch (Exception ex)
-            {
-                Log.Error(ex, $"An exception occurred while trying to associate company '{organizationId}' with industry '{industryName}'.");
-            }
-        }
-
 
         //load all organization ids from database
         public IEnumerable<string> GetAllOrganizationIds()
@@ -330,13 +294,7 @@ namespace Companies.Domain.Services.Repositories
 
                 await _industryRepository.InsertIndustries(allIndustries);
 
-                foreach (var company in companies)
-                {
-                    foreach(var industry in company.Industries)
-                    {
-                        await AssociateCompanyWithIndustry(company.OrganizationId, industry.Name);
-                    }
-                }
+                await _companyIndustryAssociation.AssociateCompaniesWithIndustries(companies);
             }
             catch (Exception ex)
             {

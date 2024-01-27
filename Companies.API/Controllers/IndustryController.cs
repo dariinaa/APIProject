@@ -3,6 +3,7 @@ using Companies.Domain.Abstraction.Services;
 using Companies.Domain.Services;
 using Companies.Infrastructure.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace Companies.API.Controllers
 {
@@ -19,8 +20,13 @@ namespace Companies.API.Controllers
 
         [HttpPost]
         [Route("insert-industry")]
-        public async Task<IActionResult> InsertIndustry([FromQuery] string industryName)
+        public async Task<IActionResult> InsertIndustry([FromQuery][Required] string industryName)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             try
             {
                 await _industryService.InsertIndustry(industryName);
@@ -34,12 +40,16 @@ namespace Companies.API.Controllers
 
         [HttpPut]
         [Route("update-industry")]
-        public async Task<IActionResult> UpdateIndustry([FromQuery] IndustryInsertion industry)
+        public async Task<IActionResult> UpdateIndustry([FromQuery] string currentName, string newName)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             try
             {
-                await _industryService.UpdateIndustryName(industry);
-                return Ok($"Industry with ID '{industry.Id}' updated successfully.");
+                await _industryService.UpdateIndustryName(currentName, newName);
+                return Ok($"Industry with name '{currentName}' updated to '{newName}' successfully.");
             }
             catch (Exception ex)
             {
@@ -49,8 +59,13 @@ namespace Companies.API.Controllers
 
         [HttpDelete]
         [Route("delete-industry-by-name")]
-        public async Task<IActionResult> DeleteIndustryByName(string industryName)
+        public async Task<IActionResult> DeleteIndustryByName([FromQuery][Required] string industryName)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             try
             {
                 await _industryService.DeleteIndustryByName(industryName);

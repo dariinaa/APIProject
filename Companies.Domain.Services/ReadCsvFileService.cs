@@ -22,7 +22,10 @@ namespace Companies.Domain.Services
 
         public async Task SaveCsvDataToDatabaseAsync(string filePath)
         {
-            await _readCsvFileRepository.SaveCsvDataToDatabaseAsync(filePath);
+            string originalString = filePath;
+            string escapedString = originalString.Replace("\\", "\\\\");
+
+            await _readCsvFileRepository.SaveCsvDataToDatabaseAsync(escapedString);
         }
     }
 }

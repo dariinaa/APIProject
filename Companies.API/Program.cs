@@ -43,6 +43,7 @@ builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 builder.Services.AddScoped<IReadCsvFileService, ReadCsvFileService>();
 builder.Services.AddScoped<IReadCsvFileRepository, ReadCsvFileRepository>();
+builder.Services.AddScoped<ICompanyIndustryAssociation, CompanyIndustryAssociation>();
 
 //logger
 Log.Logger = new LoggerConfiguration()
@@ -71,8 +72,8 @@ app.MapControllers();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<IDataBaseContext>();
-    await dbContext.ResetDatabase();
-    //await dbContext.InitializeDatabase();
+    //await dbContext.ResetDatabase();
+    await dbContext.InitializeDatabase();
 }
 
 app.Run();

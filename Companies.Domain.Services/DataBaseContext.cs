@@ -75,14 +75,14 @@ namespace Companies.Domain.Services
                     _connection, new Dictionary<string, object>());
 
                 await ExequteSqliteCommand("CREATE TABLE IF NOT EXISTS Industries " +
-                    "(Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT)",
+                    "(Name TEXT PRIMARY KEY)",
                     _connection, new Dictionary<string, object>());
 
                 await ExequteSqliteCommand("CREATE TABLE IF NOT EXISTS CompanyIndustry " +
-                    "(OrganizationId TEXT, IndustryId INTEGER, " +
+                    "(OrganizationId TEXT, Name TEXT, " +
                     "FOREIGN KEY (OrganizationId) REFERENCES Companies (OrganizationId), " +
-                    "FOREIGN KEY (IndustryId) REFERENCES Industries (Id), " +
-                    "PRIMARY KEY (OrganizationId, IndustryId))",
+                    "FOREIGN KEY (Name) REFERENCES Industries (Name), " +
+                    "PRIMARY KEY (OrganizationId, Name))",
                     _connection, new Dictionary<string, object>());
 
                 Log.Information("The database was initialized.");

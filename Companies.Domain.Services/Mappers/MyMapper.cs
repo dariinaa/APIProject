@@ -22,7 +22,6 @@ namespace Companies.Domain.Services.Mappers
         {
             return new Industry
             {
-                Id = reader["Id"].ToString(),
                 Name = reader["Name"].ToString(),
             };
         }

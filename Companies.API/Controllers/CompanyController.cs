@@ -20,6 +20,11 @@ namespace Companies.API.Controllers
         [Route("insert-company")]
         public async Task<IActionResult> InsertCompany([FromBody] CompanyInsertion company)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             try
             {
                 await _companyService.InsertCompany(company);
@@ -35,6 +40,11 @@ namespace Companies.API.Controllers
         [Route("update-company")]
         public async Task<IActionResult> UpdateCompany([FromBody] CompanyInsertion request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             try
             {
                 await _companyService.UpdateCompany(request);
@@ -50,6 +60,11 @@ namespace Companies.API.Controllers
         [Route("delete-company-by-organization-id")]
         public async Task<IActionResult> DeleteCompanyByOrganizationId(string organizationId)
         {
+            if (string.IsNullOrEmpty(organizationId))
+            {
+                return BadRequest("OrganizationId cannot be null or empty.");
+            }
+
             try
             {
                 await _companyService.DeleteCompanyByOrganizationId(organizationId);

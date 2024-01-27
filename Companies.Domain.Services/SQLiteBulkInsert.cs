@@ -9,9 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Companies.Domain.Services.BulkClasses
+namespace Companies.Domain.Services
 {
-    public class SQLiteBulkInsert : IDisposable
+    public class SQLiteBulkInsert : IDisposable, ISQLiteBulkInsert
     {
         private readonly IDataBaseContext _dataBaseContext;
         private SqliteCommand m_cmd;

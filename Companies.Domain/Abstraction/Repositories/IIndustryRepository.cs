@@ -12,7 +12,7 @@ namespace Companies.Domain.Abstraction.Repositories
         Task InsertIndustry(string industryName);
         Task DeleteIndustryByName(string industryName);
         Task<IEnumerable<Industry>> GetAllIndustries();
-        Task UpdateIndustryName(IndustryInsertion industry);
+        Task UpdateIndustryName(string currentName, string newName);
         bool IsUniqueIndustryName(string industryName, string excludeIndustryId = null);
         Task InsertIndustries(IEnumerable<IndustryInsertion> industries);
     }
