@@ -37,7 +37,7 @@ namespace Companies.API.Controllers
             }
         }
 
-        /*[HttpPost]
+        [HttpPost]
         [Route("save-records-from-folder")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Standart, Administrator")]
         public async Task<IActionResult> SaveCsvDataToDatabaseFromFolderAsync([FromQuery] string folderPath)
@@ -56,7 +56,7 @@ namespace Companies.API.Controllers
             {
                 return BadRequest($"Failed to insert data. Error: {ex.Message}");
             }
-        }*/
+        }
 
     }
 }

@@ -21,7 +21,7 @@ namespace Companies.Domain.Services.Auth
         {
             return await _userRepository.GetUserByUsername(userLogin.Username);
         }
-        public async Task AddUser(User newUser)
+        public async Task AddUser(Register newUser)
         {
             var existingUser = await _userRepository.GetUserByUsername(newUser.Username);
             if (existingUser != null)

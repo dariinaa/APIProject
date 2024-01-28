@@ -15,5 +15,6 @@ namespace Companies.Domain.Abstraction.Repositories
         Task UpdateIndustryName(string currentName, string newName);
         bool IsUniqueIndustryName(string industryName, string excludeIndustryId = null);
         Task InsertIndustries(IEnumerable<IndustryInsertion> industries);
+        Task<IEnumerable<Industry>> GetTop10IndustriesByCompanies();
     }
 }

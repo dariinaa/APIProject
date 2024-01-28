@@ -2683,3 +2683,352 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 2024-01-28 21:33:47.995 +02:00 [INF] Executed action Companies.API.Controllers.PdfSummaryController.GeneratePdf (Companies.API) in 653.6448ms
 2024-01-28 21:33:48.002 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.PdfSummaryController.GeneratePdf (Companies.API)'
 2024-01-28 21:33:48.006 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/PdfSummary/generate-pdf-company-summary-by-OrganizationId?organizationId=12 - - - 201 - text/plain;+charset=utf-8 711.7276ms
+2024-01-28 23:03:24.107 +02:00 [INF] The database was initialized.
+2024-01-28 23:03:24.241 +02:00 [INF] User profile is available. Using 'C:\Users\EliteBook\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 23:03:24.330 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:03:24.344 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:03:24.348 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:03:24.352 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:03:24.510 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-28 23:03:24.514 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-28 23:03:24.521 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 23:03:24.523 +02:00 [INF] Hosting environment: Development
+2024-01-28 23:03:24.525 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-28 23:03:24.532 +02:00 [INF] Daily statistics saved to JSON file: JSONStatistics/statistic_20240128230324.JSON
+2024-01-28 23:03:24.535 +02:00 [INF] saved daily statistic file.
+2024-01-28 23:03:26.324 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-28 23:03:27.131 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 816.8786ms
+2024-01-28 23:03:27.164 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-28 23:03:27.213 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-28 23:03:27.233 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 69.3410ms
+2024-01-28 23:03:27.413 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 200.2132ms
+2024-01-28 23:03:28.092 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-28 23:03:28.545 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 453.2837ms
+2024-01-28 23:13:02.915 +02:00 [INF] The database was initialized.
+2024-01-28 23:13:03.050 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:13:03.054 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:13:03.057 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:13:03.061 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:13:03.064 +02:00 [INF] User profile is available. Using 'C:\Users\EliteBook\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 23:13:03.378 +02:00 [INF] Daily statistics saved to JSON file: JSONStatistics/statistic_20240128231303.JSON
+2024-01-28 23:13:03.379 +02:00 [INF] saved daily statistic file.
+2024-01-28 23:13:03.473 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-28 23:13:03.475 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-28 23:13:03.480 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 23:13:03.482 +02:00 [INF] Hosting environment: Development
+2024-01-28 23:13:03.483 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-28 23:13:03.945 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-28 23:13:04.490 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 555.6298ms
+2024-01-28 23:13:04.506 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-28 23:13:04.516 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 9.2776ms
+2024-01-28 23:13:04.581 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-28 23:13:04.607 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.8859ms
+2024-01-28 23:13:05.101 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-28 23:13:05.378 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 276.8854ms
+2024-01-28 23:13:22.807 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-28 23:13:22.824 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 16.9575ms
+2024-01-28 23:13:22.891 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-28 23:13:22.891 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-28 23:13:22.897 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 6.5929ms
+2024-01-28 23:13:22.913 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.9132ms
+2024-01-28 23:13:23.311 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-28 23:13:23.363 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 51.7912ms
+2024-01-28 23:13:26.849 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - -
+2024-01-28 23:13:27.047 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.G (Companies.API)'
+2024-01-28 23:13:27.112 +02:00 [INF] Route matched with {action = "G", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] G() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:13:27.294 +02:00 [INF] Successfully retrieved the top 10 companies by employees from the database.
+2024-01-28 23:13:27.309 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:13:27.378 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.G (Companies.API) in 253.8953ms
+2024-01-28 23:13:27.387 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.G (Companies.API)'
+2024-01-28 23:13:27.391 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - - - 200 - application/json;+charset=utf-8 541.9429ms
+2024-01-28 23:18:08.006 +02:00 [INF] The database was initialized.
+2024-01-28 23:18:08.115 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:18:08.121 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:18:08.124 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:18:08.127 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:18:08.132 +02:00 [INF] User profile is available. Using 'C:\Users\EliteBook\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 23:18:08.313 +02:00 [INF] Daily statistics saved to JSON file: JSONStatistics/statistic_20240128231808.JSON
+2024-01-28 23:18:08.319 +02:00 [INF] saved daily statistic file.
+2024-01-28 23:18:08.413 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-28 23:18:08.415 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-28 23:18:08.419 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 23:18:08.421 +02:00 [INF] Hosting environment: Development
+2024-01-28 23:18:08.422 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-28 23:18:09.292 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-28 23:18:09.861 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 579.4913ms
+2024-01-28 23:18:09.961 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-28 23:18:09.961 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-28 23:18:10.040 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 78.5549ms
+2024-01-28 23:18:10.070 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 108.8425ms
+2024-01-28 23:18:10.464 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-28 23:18:10.743 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 279.1719ms
+2024-01-28 23:18:16.385 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-top10-industries-by-companies-count - -
+2024-01-28 23:18:16.470 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetTop10IndustriesByCompanies (Companies.API)'
+2024-01-28 23:18:16.511 +02:00 [INF] Route matched with {action = "GetTop10IndustriesByCompanies", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTop10IndustriesByCompanies() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-28 23:18:16.591 +02:00 [INF] Successfully retrieved the top 10 industries by the number of companies from the database.
+2024-01-28 23:18:16.604 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:18:16.627 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetTop10IndustriesByCompanies (Companies.API) in 104.7606ms
+2024-01-28 23:18:16.636 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetTop10IndustriesByCompanies (Companies.API)'
+2024-01-28 23:18:16.639 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-top10-industries-by-companies-count - - - 200 - application/json;+charset=utf-8 254.6470ms
+2024-01-28 23:23:37.373 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - -
+2024-01-28 23:23:37.390 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-28 23:23:37.404 +02:00 [INF] Route matched with {action = "GetAllIndustries", controller = "Industry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllIndustries() on controller Companies.API.Controllers.IndustryController (Companies.API).
+2024-01-28 23:23:37.417 +02:00 [INF] successfully retrieved all stocks from database.
+2024-01-28 23:23:37.421 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Industry, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:23:37.424 +02:00 [INF] Executed action Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API) in 13.7878ms
+2024-01-28 23:23:37.431 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.IndustryController.GetAllIndustries (Companies.API)'
+2024-01-28 23:23:37.434 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Industry/get-all-industries - - - 200 - application/json;+charset=utf-8 60.8541ms
+2024-01-28 23:23:44.799 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-28 23:23:44.809 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-28 23:23:44.819 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:23:44.849 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-28 23:23:44.851 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:23:44.874 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 46.1046ms
+2024-01-28 23:23:44.879 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-28 23:23:44.882 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 83.0793ms
+2024-01-28 23:23:53.730 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - -
+2024-01-28 23:23:53.735 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.G (Companies.API)'
+2024-01-28 23:23:53.748 +02:00 [INF] Route matched with {action = "G", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] G() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:23:53.762 +02:00 [INF] Successfully retrieved the top 10 companies by employees from the database.
+2024-01-28 23:23:53.765 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:23:53.767 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.G (Companies.API) in 13.7534ms
+2024-01-28 23:23:53.770 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.G (Companies.API)'
+2024-01-28 23:23:53.772 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - - - 200 - application/json;+charset=utf-8 42.4691ms
+2024-01-28 23:24:13.162 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-OrganizationId?organizationId=19E3a5Bf6dBDc4F - -
+2024-01-28 23:24:13.167 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-28 23:24:13.181 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator)
+2024-01-28 23:24:13.197 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-28 23:24:13.199 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-OrganizationId?organizationId=19E3a5Bf6dBDc4F - - - 401 0 - 36.4681ms
+2024-01-28 23:25:19.168 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/DailyStatistics/get-daily-statistics - -
+2024-01-28 23:25:19.202 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Standart|Administrator)
+2024-01-28 23:25:19.208 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-28 23:25:19.218 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/DailyStatistics/get-daily-statistics - - - 401 0 - 50.1179ms
+2024-01-28 23:25:57.363 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/PdfSummary/generate-pdf-company-summary-by-OrganizationId - -
+2024-01-28 23:25:57.368 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Standart|Administrator)
+2024-01-28 23:25:57.371 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-28 23:25:57.373 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/PdfSummary/generate-pdf-company-summary-by-OrganizationId - - - 401 0 - 10.6061ms
+2024-01-28 23:34:23.570 +02:00 [INF] The database was initialized.
+2024-01-28 23:34:23.700 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:34:23.705 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:34:23.708 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:34:23.711 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:34:23.716 +02:00 [INF] User profile is available. Using 'C:\Users\EliteBook\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 23:34:23.894 +02:00 [INF] Daily statistics saved to JSON file: JSONStatistics/statistic_20240128233423.JSON
+2024-01-28 23:34:23.896 +02:00 [INF] saved daily statistic file.
+2024-01-28 23:34:23.997 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-28 23:34:24.000 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-28 23:34:24.008 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 23:34:24.010 +02:00 [INF] Hosting environment: Development
+2024-01-28 23:34:24.011 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-28 23:34:24.986 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-28 23:34:25.807 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 847.3834ms
+2024-01-28 23:34:25.937 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-28 23:34:25.937 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-28 23:34:26.039 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 102.1075ms
+2024-01-28 23:34:26.120 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 183.3130ms
+2024-01-28 23:34:26.609 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-28 23:34:26.968 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 358.8583ms
+2024-01-28 23:34:31.442 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - -
+2024-01-28 23:34:31.590 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.G (Companies.API)'
+2024-01-28 23:34:31.744 +02:00 [INF] Route matched with {action = "G", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] G() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:34:31.891 +02:00 [INF] Successfully retrieved the top 10 companies by employees from the database.
+2024-01-28 23:34:31.991 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:34:32.201 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.G (Companies.API) in 406.9829ms
+2024-01-28 23:34:32.256 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.G (Companies.API)'
+2024-01-28 23:34:32.258 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - - - 200 - application/json;+charset=utf-8 815.5764ms
+2024-01-28 23:34:39.690 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-28 23:34:39.702 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-28 23:34:39.711 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:34:39.736 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-28 23:34:39.738 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:34:39.752 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 35.8574ms
+2024-01-28 23:34:39.755 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-28 23:34:39.758 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 68.5321ms
+2024-01-28 23:34:48.151 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/DailyStatistics/get-daily-statistics - -
+2024-01-28 23:34:48.172 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Standart|Administrator)
+2024-01-28 23:34:48.187 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-28 23:34:48.189 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/DailyStatistics/get-daily-statistics - - - 401 0 - 37.3976ms
+2024-01-28 23:36:31.680 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/DailyStatistics/save-daily-statistics-to-JSON - -
+2024-01-28 23:36:31.691 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Standart|Administrator)
+2024-01-28 23:36:31.694 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-28 23:36:31.695 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/DailyStatistics/save-daily-statistics-to-JSON - - - 401 0 - 15.3356ms
+2024-01-28 23:38:22.669 +02:00 [INF] The database was initialized.
+2024-01-28 23:38:22.806 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:38:22.810 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:38:22.814 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:38:22.818 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:38:22.822 +02:00 [INF] User profile is available. Using 'C:\Users\EliteBook\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 23:38:23.060 +02:00 [INF] Daily statistics saved to JSON file: JSONStatistics/statistic_20240128233823.JSON
+2024-01-28 23:38:23.063 +02:00 [INF] saved daily statistic file.
+2024-01-28 23:38:23.174 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-28 23:38:23.180 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-28 23:38:23.186 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 23:38:23.189 +02:00 [INF] Hosting environment: Development
+2024-01-28 23:38:23.190 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-28 23:38:24.254 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-28 23:38:24.785 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 538.0343ms
+2024-01-28 23:38:24.807 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-28 23:38:24.818 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 10.8709ms
+2024-01-28 23:38:24.860 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-28 23:38:24.887 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.7134ms
+2024-01-28 23:38:25.544 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-28 23:38:25.775 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 230.8293ms
+2024-01-28 23:40:12.532 +02:00 [INF] The database was initialized.
+2024-01-28 23:40:12.662 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:40:12.667 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:40:12.671 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:40:12.674 +02:00 [INF] Successfully retrieved the count of industries created today: 103
+2024-01-28 23:40:12.677 +02:00 [INF] User profile is available. Using 'C:\Users\EliteBook\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 23:40:12.856 +02:00 [INF] Daily statistics saved to JSON file: JSONStatistics/statistic_20240128234012.JSON
+2024-01-28 23:40:12.859 +02:00 [INF] saved daily statistic file.
+2024-01-28 23:40:12.973 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-28 23:40:12.976 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-28 23:40:12.981 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 23:40:12.983 +02:00 [INF] Hosting environment: Development
+2024-01-28 23:40:12.985 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-28 23:40:13.484 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-28 23:40:14.063 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 592.4986ms
+2024-01-28 23:40:14.107 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-28 23:40:14.107 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-28 23:40:14.204 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 95.6746ms
+2024-01-28 23:40:14.260 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 152.5960ms
+2024-01-28 23:40:14.585 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-28 23:40:14.990 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 405.2729ms
+2024-01-28 23:40:33.720 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/User/register application/json 124
+2024-01-28 23:40:33.734 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-28 23:40:33.781 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.Auth.UserController.Register (Companies.API)'
+2024-01-28 23:40:33.831 +02:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Companies.Infrastructure.Models.Auth.Register) on controller Companies.API.Controllers.Auth.UserController (Companies.API).
+2024-01-28 23:40:33.905 +02:00 [INF] User not found.
+2024-01-28 23:40:34.083 +02:00 [INF] User added successfully.
+2024-01-28 23:40:34.105 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-28 23:40:34.125 +02:00 [INF] Executed action Companies.API.Controllers.Auth.UserController.Register (Companies.API) in 275.908ms
+2024-01-28 23:40:34.146 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.Auth.UserController.Register (Companies.API)'
+2024-01-28 23:40:34.148 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/User/register application/json 124 - 200 - text/plain;+charset=utf-8 428.8497ms
+2024-01-28 23:40:46.367 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/User/login?Username=kaka&Password=string - -
+2024-01-28 23:40:46.378 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.Auth.UserController.Login (Companies.API)'
+2024-01-28 23:40:46.398 +02:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Companies.Infrastructure.Models.Auth.UserLogin) on controller Companies.API.Controllers.Auth.UserController (Companies.API).
+2024-01-28 23:40:46.424 +02:00 [INF] Successfully found user.
+2024-01-28 23:40:46.569 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-28 23:40:46.572 +02:00 [INF] Executed action Companies.API.Controllers.Auth.UserController.Login (Companies.API) in 169.5627ms
+2024-01-28 23:40:46.575 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.Auth.UserController.Login (Companies.API)'
+2024-01-28 23:40:46.577 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/User/login?Username=kaka&Password=string - - - 200 - text/plain;+charset=utf-8 210.4906ms
+2024-01-28 23:40:59.091 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - -
+2024-01-28 23:40:59.169 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetTop10CompaniesByEmployees (Companies.API)'
+2024-01-28 23:40:59.177 +02:00 [INF] Route matched with {action = "GetTop10CompaniesByEmployees", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTop10CompaniesByEmployees() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:40:59.196 +02:00 [INF] Successfully retrieved the top 10 companies by employees from the database.
+2024-01-28 23:40:59.200 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:40:59.215 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetTop10CompaniesByEmployees (Companies.API) in 31.6578ms
+2024-01-28 23:40:59.221 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetTop10CompaniesByEmployees (Companies.API)'
+2024-01-28 23:40:59.223 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - - - 200 - application/json;+charset=utf-8 132.6072ms
+2024-01-28 23:41:08.954 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-28 23:41:08.965 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-28 23:41:08.978 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:41:09.038 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-28 23:41:09.039 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:41:09.055 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 37.6472ms
+2024-01-28 23:41:09.058 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-28 23:41:09.061 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 106.3169ms
+2024-01-28 23:41:18.937 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-OrganizationId?organizationId=FAB0d41d5b5d22c - -
+2024-01-28 23:41:18.939 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-28 23:41:18.951 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator)
+2024-01-28 23:41:18.957 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2024-01-28 23:41:19.030 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7022/api/Company/delete-company-by-OrganizationId?organizationId=FAB0d41d5b5d22c - - - 403 0 - 93.0912ms
+2024-01-28 23:41:43.805 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7022/api/Company/update-company application/json 240
+2024-01-28 23:41:43.807 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-28 23:41:43.815 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.UpdateCompany (Companies.API)'
+2024-01-28 23:41:43.824 +02:00 [INF] Route matched with {action = "UpdateCompany", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCompany(Companies.Infrastructure.Models.CompanyInsertion) on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:41:44.473 +02:00 [INF] Industry 'string' added for bulk insertion.
+2024-01-28 23:41:44.569 +02:00 [INF] Bulk insert executed successfully.
+2024-01-28 23:41:44.685 +02:00 [INF] Company with OrganizationId 'FAB0d41d5b5d22c' updated in the database.
+2024-01-28 23:41:44.687 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-28 23:41:44.690 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.UpdateCompany (Companies.API) in 860.4837ms
+2024-01-28 23:41:44.694 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.UpdateCompany (Companies.API)'
+2024-01-28 23:41:44.697 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7022/api/Company/update-company application/json 240 - 200 - text/plain;+charset=utf-8 891.7973ms
+2024-01-28 23:41:50.099 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - -
+2024-01-28 23:41:50.102 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-28 23:41:50.103 +02:00 [INF] Route matched with {action = "GetAllCompanies", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCompanies() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:41:50.118 +02:00 [INF] Successfully retrieved all companies from the database.
+2024-01-28 23:41:50.120 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:41:50.129 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API) in 22.4439ms
+2024-01-28 23:41:50.134 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetAllCompanies (Companies.API)'
+2024-01-28 23:41:50.135 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-all-companies - - - 200 - application/json;+charset=utf-8 36.1899ms
+2024-01-28 23:42:20.244 +02:00 [INF] The database was initialized.
+2024-01-28 23:42:20.397 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:42:20.401 +02:00 [INF] Successfully retrieved the count of industries created today: 104
+2024-01-28 23:42:20.406 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:42:20.409 +02:00 [INF] Successfully retrieved the count of industries created today: 104
+2024-01-28 23:42:20.426 +02:00 [INF] User profile is available. Using 'C:\Users\EliteBook\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 23:42:20.618 +02:00 [INF] Daily statistics saved to JSON file: JSONStatistics/statistic_20240128234220.JSON
+2024-01-28 23:42:20.626 +02:00 [INF] saved daily statistic file.
+2024-01-28 23:42:20.764 +02:00 [INF] Now listening on: https://localhost:7022
+2024-01-28 23:42:20.766 +02:00 [INF] Now listening on: http://localhost:5002
+2024-01-28 23:42:20.771 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 23:42:20.774 +02:00 [INF] Hosting environment: Development
+2024-01-28 23:42:20.776 +02:00 [INF] Content root path: D:\uni\semester_3\API\APIProject\Companies.API
+2024-01-28 23:42:21.342 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - -
+2024-01-28 23:42:22.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - - - 200 - text/html;charset=utf-8 987.8578ms
+2024-01-28 23:42:22.363 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - -
+2024-01-28 23:42:22.363 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - -
+2024-01-28 23:42:22.403 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 41.8492ms
+2024-01-28 23:42:22.447 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.3012ms
+2024-01-28 23:42:22.959 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - -
+2024-01-28 23:42:23.341 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 381.7545ms
+2024-01-28 23:42:33.922 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/User/login?Username=kaka&Password=string - -
+2024-01-28 23:42:33.998 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.Auth.UserController.Login (Companies.API)'
+2024-01-28 23:42:34.066 +02:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Companies.Infrastructure.Models.Auth.UserLogin) on controller Companies.API.Controllers.Auth.UserController (Companies.API).
+2024-01-28 23:42:34.133 +02:00 [INF] Successfully found user.
+2024-01-28 23:42:34.214 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-28 23:42:34.227 +02:00 [INF] Executed action Companies.API.Controllers.Auth.UserController.Login (Companies.API) in 145.6208ms
+2024-01-28 23:42:34.235 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.Auth.UserController.Login (Companies.API)'
+2024-01-28 23:42:34.239 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/User/login?Username=kaka&Password=string - - - 200 - text/plain;+charset=utf-8 316.8138ms
+2024-01-28 23:42:41.815 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/User/register?Username=xs - 0
+2024-01-28 23:42:41.824 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-28 23:42:41.832 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.Auth.UserController.Register (Companies.API)'
+2024-01-28 23:42:41.845 +02:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Companies.Infrastructure.Models.Auth.Register) on controller Companies.API.Controllers.Auth.UserController (Companies.API).
+2024-01-28 23:42:41.859 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-01-28 23:42:41.879 +02:00 [INF] Executed action Companies.API.Controllers.Auth.UserController.Register (Companies.API) in 30.8211ms
+2024-01-28 23:42:41.882 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.Auth.UserController.Register (Companies.API)'
+2024-01-28 23:42:41.884 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/User/register?Username=xs - 0 - 400 - application/problem+json;+charset=utf-8 69.4629ms
+2024-01-28 23:42:57.212 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7022/api/User/register?Username=xs&EmailAddress=dfdsf&Password=dsdfsd&GivenName=ddsfd&Surname=sdfs - 0
+2024-01-28 23:42:57.215 +02:00 [INF] Request from Remote IP address: ::1
+2024-01-28 23:42:57.225 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.Auth.UserController.Register (Companies.API)'
+2024-01-28 23:42:57.245 +02:00 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Companies.Infrastructure.Models.Auth.Register) on controller Companies.API.Controllers.Auth.UserController (Companies.API).
+2024-01-28 23:42:57.264 +02:00 [INF] User not found.
+2024-01-28 23:42:57.398 +02:00 [INF] User added successfully.
+2024-01-28 23:42:57.402 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-28 23:42:57.406 +02:00 [INF] Executed action Companies.API.Controllers.Auth.UserController.Register (Companies.API) in 157.0136ms
+2024-01-28 23:42:57.410 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.Auth.UserController.Register (Companies.API)'
+2024-01-28 23:42:57.412 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7022/api/User/register?Username=xs&EmailAddress=dfdsf&Password=dsdfsd&GivenName=ddsfd&Surname=sdfs - 0 - 200 - text/plain;+charset=utf-8 199.2617ms
+2024-01-28 23:43:13.015 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/DailyStatistics/get-daily-statistics - -
+2024-01-28 23:43:13.106 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.DailyStatisticsController.GetDailyStatistics (Companies.API)'
+2024-01-28 23:43:13.112 +02:00 [INF] Route matched with {action = "GetDailyStatistics", controller = "DailyStatistics"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDailyStatistics() on controller Companies.API.Controllers.DailyStatisticsController (Companies.API).
+2024-01-28 23:43:13.121 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:43:13.123 +02:00 [INF] Successfully retrieved the count of industries created today: 104
+2024-01-28 23:43:13.125 +02:00 [INF] Successfully retrieved the count of companies created today: 100
+2024-01-28 23:43:13.126 +02:00 [INF] Successfully retrieved the count of industries created today: 104
+2024-01-28 23:43:13.127 +02:00 [INF] Executing OkObjectResult, writing value of type 'Companies.Infrastructure.Models.JSON.DailyStatistics'.
+2024-01-28 23:43:13.131 +02:00 [INF] Executed action Companies.API.Controllers.DailyStatisticsController.GetDailyStatistics (Companies.API) in 12.7604ms
+2024-01-28 23:43:13.138 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.DailyStatisticsController.GetDailyStatistics (Companies.API)'
+2024-01-28 23:43:13.141 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/DailyStatistics/get-daily-statistics - - - 200 - application/json;+charset=utf-8 125.7153ms
+2024-01-28 23:43:34.289 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - -
+2024-01-28 23:43:34.296 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.CompanyController.GetTop10CompaniesByEmployees (Companies.API)'
+2024-01-28 23:43:34.305 +02:00 [INF] Route matched with {action = "GetTop10CompaniesByEmployees", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTop10CompaniesByEmployees() on controller Companies.API.Controllers.CompanyController (Companies.API).
+2024-01-28 23:43:34.333 +02:00 [INF] Successfully retrieved the top 10 companies by employees from the database.
+2024-01-28 23:43:34.335 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Companies.Infrastructure.Models.Company, Companies.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-28 23:43:34.343 +02:00 [INF] Executed action Companies.API.Controllers.CompanyController.GetTop10CompaniesByEmployees (Companies.API) in 32.4836ms
+2024-01-28 23:43:34.349 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.CompanyController.GetTop10CompaniesByEmployees (Companies.API)'
+2024-01-28 23:43:34.351 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Company/get-top10-companies-by-Employees - - - 200 - application/json;+charset=utf-8 62.0099ms
+2024-01-28 23:43:43.735 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7022/api/PdfSummary/generate-pdf-company-summary-by-OrganizationId?organizationId=19E3a5Bf6dBDc4F - -
+2024-01-28 23:43:43.741 +02:00 [INF] Executing endpoint 'Companies.API.Controllers.PdfSummaryController.GeneratePdf (Companies.API)'
+2024-01-28 23:43:43.752 +02:00 [INF] Route matched with {action = "GeneratePdf", controller = "PdfSummary"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GeneratePdf(System.String) on controller Companies.API.Controllers.PdfSummaryController (Companies.API).
+2024-01-28 23:43:44.322 +02:00 [INF] pdf file was created successfully.
+2024-01-28 23:43:44.324 +02:00 [INF] Executing CreatedResult, writing value of type 'System.String'.
+2024-01-28 23:43:44.329 +02:00 [INF] Executed action Companies.API.Controllers.PdfSummaryController.GeneratePdf (Companies.API) in 570.3997ms
+2024-01-28 23:43:44.331 +02:00 [INF] Executed endpoint 'Companies.API.Controllers.PdfSummaryController.GeneratePdf (Companies.API)'
+2024-01-28 23:43:44.333 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7022/api/PdfSummary/generate-pdf-company-summary-by-OrganizationId?organizationId=19E3a5Bf6dBDc4F - - - 201 - text/plain;+charset=utf-8 597.7411ms

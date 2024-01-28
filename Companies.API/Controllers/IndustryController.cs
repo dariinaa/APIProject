@@ -96,5 +96,20 @@ namespace Companies.API.Controllers
                 return BadRequest($"Failed to retrieve industries. Error: {ex.Message}");
             }
         }
+
+        [HttpGet]
+        [Route("get-top10-industries-by-companies-count")]
+        public async Task<IActionResult> GetTop10IndustriesByCompanies()
+        {
+            try
+            {
+                var industries = await _industryService.GetTop10IndustriesByCompanies();
+                return Ok(industries);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Failed to retrieve industries. Error: {ex.Message}");
+            }
+        }
     }
 }

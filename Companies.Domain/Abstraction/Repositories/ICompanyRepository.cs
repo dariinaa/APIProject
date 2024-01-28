@@ -16,5 +16,6 @@ namespace Companies.Domain.Abstraction.Repositories
         bool IsUniqueOrganizationIds(string organizationId, string excludeCompanyId = null);
         Task InsertCompanies(IEnumerable<CompanyInsertion> companies);
         Task<Company> GetCompanyByOrganizationId(string organizationId);
+        Task<IEnumerable<Company>> GetTop10CompaniesByEmployees();
     }
 }

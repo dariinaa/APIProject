@@ -96,5 +96,20 @@ namespace Companies.API.Controllers
                 return BadRequest($"Failed to retrieve companies. Error: {ex.Message}");
             }
         }
+
+        [HttpGet]
+        [Route("get-top10-companies-by-Employees")]
+        public async Task<IActionResult> GetTop10CompaniesByEmployees()
+        {
+            try
+            {
+                var companies = await _companyService.GetTop10CompaniesByEmployees();
+                return Ok(companies);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Failed to retrieve companies. Error: {ex.Message}");
+            }
+        }
     }
 }

@@ -53,7 +53,7 @@ namespace Companies.API.Controllers.Auth
 
         [HttpPost]
         [Route("register")]
-        public async Task<IActionResult> Register([FromBody] User newUser)
+        public async Task<IActionResult> Register([FromQuery] Register newUser)
         {
             if (!ModelState.IsValid)
             {

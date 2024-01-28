@@ -51,5 +51,10 @@ namespace Companies.Domain.Services
             }
             await _companyRepository.DeleteCompanyByOrganizationId(organizationId);
         }
+
+        public async Task<IEnumerable<Company>> GetTop10CompaniesByEmployees()
+        {
+            return await _companyRepository.GetTop10CompaniesByEmployees();
+        }
     }
 }

@@ -338,5 +338,34 @@ namespace Companies.Domain.Services.Repositories
 
             return null;
         }
+
+        public async Task<IEnumerable<Company>> GetTop10CompaniesByEmployees()
+        {
+            try
+            {
+                List<Company> companies = new List<Company>();
+                using (var command = new SqliteCommand("SELECT * FROM Companies ORDER BY Employees DESC LIMIT 10", _dataBaseContext.GetConnection()))
+                {
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            var company = _myMapper.DataToCompany(reader);
+
+                            company.Industries = await GetIndustriesByOrganizationId(company.OrganizationId);
+
+                            companies.Add(company);
+                        }
+                    }
+                }
+                Log.Information("Successfully retrieved the top 10 companies by employees from the database.");
+                return companies;
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "An exception occurred while trying to retrieve the top 10 companies by employees.");
+                return null;
+            }
+        }
     }
 }

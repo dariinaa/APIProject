@@ -10,7 +10,7 @@ namespace Companies.Domain.Abstraction.Repositories
     public interface IUserRepository
     {
         Task<User> GetUserByUsername(string username);
-        Task<bool> AddUser(User newUser);
+        Task<bool> AddUser(Register newUser);
 
     }
 }

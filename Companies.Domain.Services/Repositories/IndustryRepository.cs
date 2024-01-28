@@ -208,5 +208,35 @@ namespace Companies.Domain.Services.Repositories
                 Log.Error(ex, "An exception occurred during bulk insert of industries.");
             }
         }
+
+        public async Task<IEnumerable<Industry>> GetTop10IndustriesByCompanies()
+        {
+            try
+            {
+                List<Industry> industries = new List<Industry>();
+                using (var command = new SqliteCommand("SELECT i.*, COUNT(ci.OrganizationId) AS CompanyCount " +
+                                                      "FROM Industries i " +
+                                                      "LEFT JOIN CompanyIndustry ci ON i.Name = ci.Name " +
+                                                      "GROUP BY i.Name " +
+                                                      "ORDER BY CompanyCount DESC " +
+                                                      "LIMIT 10", _dataBaseContext.GetConnection()))
+                {
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            industries.Add(_myMapper.DataToIndustry(reader));
+                        }
+                    }
+                }
+                Log.Information("Successfully retrieved the top 10 industries by the number of companies from the database.");
+                return industries;
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "An exception occurred while trying to retrieve the top 10 industries by the number of companies.");
+                return null;
+            }
+        }
     }
 }

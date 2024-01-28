@@ -57,5 +57,10 @@ namespace Companies.Domain.Services
         {
             return await _industryRepository.GetAllIndustries();
         }
+
+        public async Task<IEnumerable<Industry>> GetTop10IndustriesByCompanies()
+        {
+            return await _industryRepository.GetTop10IndustriesByCompanies();
+        }
     }
 }

@@ -141,3 +141,10 @@ D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\Newtonsoft.Json.
 D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\JSONStatistics\statistic_20240128210641.JSON
 D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\JSONStatistics\statistic_20240128210745.JSON
 D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\FluentScheduler.dll
+D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\JSONStatistics\statistic_20240128213000.JSON
+D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\JSONStatistics\statistic_20240128230324.JSON
+D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\JSONStatistics\statistic_20240128231303.JSON
+D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\JSONStatistics\statistic_20240128231808.JSON
+D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\JSONStatistics\statistic_20240128233423.JSON
+D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\JSONStatistics\statistic_20240128233823.JSON
+D:\uni\semester_3\API\APIProject\Companies.API\bin\Debug\net7.0\JSONStatistics\statistic_20240128234012.JSON

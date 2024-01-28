@@ -51,7 +51,7 @@ namespace Companies.Domain.Services.Repositories.Auth
             }
         }
 
-        public async Task<bool> AddUser(User newUser)
+        public async Task<bool> AddUser(Register newUser)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace Companies.Domain.Services.Repositories.Auth
                     { "@Password", newUser.Password },
                     { "@GivenName", newUser.GivenName },
                     { "@Surname", newUser.Surname },
-                    { "@Role", newUser.Role }
+                    { "@Role", "Standart" }
                 };
 
                 await _dataBaseContext.ExequteSqliteCommand("INSERT INTO Users (Username, EmailAddress, Password, GivenName, Surname, Role) VALUES (@Username, @EmailAddress, @Password, @GivenName, @Surname, @Role)",

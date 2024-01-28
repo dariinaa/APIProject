@@ -10,6 +10,6 @@ namespace Companies.Domain.Abstraction.Services.Auth
     public interface IUserService
     {
         Task<User> Get(UserLogin userLogin);
-        Task AddUser(User newUser);
+        Task AddUser(Register newUser);
     }
 }

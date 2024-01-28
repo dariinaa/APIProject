@@ -13,5 +13,7 @@ namespace Companies.Domain.Abstraction.Services
         Task<IEnumerable<Company>> GetAllCompanies();
         Task DeleteCompanyByOrganizationId(string companyName);
         Task UpdateCompany(CompanyInsertion updatedCompany);
+        Task<IEnumerable<Company>> GetTop10CompaniesByEmployees();
+
     }
 }

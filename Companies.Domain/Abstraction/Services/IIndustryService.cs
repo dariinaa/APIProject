@@ -13,5 +13,6 @@ namespace Companies.Domain.Abstraction.Services
         Task UpdateIndustryName(string currentName, string newName);
         Task DeleteIndustryByName(string industryName);
         Task<IEnumerable<Industry>> GetAllIndustries();
+        Task<IEnumerable<Industry>> GetTop10IndustriesByCompanies();
     }
 }
