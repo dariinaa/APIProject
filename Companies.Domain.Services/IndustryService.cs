@@ -23,16 +23,33 @@ namespace Companies.Domain.Services
 
         public async Task InsertIndustry(string industryName)
         {
+            if (string.IsNullOrEmpty(industryName))
+            {
+                throw new ArgumentException("IndustryName cannot be null or empty.", nameof(industryName));
+            }
             await _industryRepository.InsertIndustry(industryName);
         }
 
         public async Task UpdateIndustryName(string currentName, string newName)
         {
+            if (string.IsNullOrEmpty(currentName))
+            {
+                throw new ArgumentException("CurrentName cannot be null or empty.", nameof(currentName));
+            }
+
+            if (string.IsNullOrEmpty(newName))
+            {
+                throw new ArgumentException("NewName cannot be null or empty.", nameof(newName));
+            }
             await _industryRepository.UpdateIndustryName(currentName, newName);
         }
 
         public async Task DeleteIndustryByName(string industryName)
         {
+            if (string.IsNullOrEmpty(industryName))
+            {
+                throw new ArgumentException("IndustryName cannot be null or empty.", nameof(industryName));
+            }
             await _industryRepository.DeleteIndustryByName(industryName);
         }
 

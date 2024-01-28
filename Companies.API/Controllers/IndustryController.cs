@@ -2,6 +2,8 @@
 using Companies.Domain.Abstraction.Services;
 using Companies.Domain.Services;
 using Companies.Infrastructure.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
@@ -20,6 +22,7 @@ namespace Companies.API.Controllers
 
         [HttpPost]
         [Route("insert-industry")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Standart, Administrator")]
         public async Task<IActionResult> InsertIndustry([FromQuery][Required] string industryName)
         {
             if (!ModelState.IsValid)
@@ -40,6 +43,7 @@ namespace Companies.API.Controllers
 
         [HttpPut]
         [Route("update-industry")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Standart, Administrator")]
         public async Task<IActionResult> UpdateIndustry([FromQuery] string currentName, string newName)
         {
             if (!ModelState.IsValid)
@@ -58,8 +62,9 @@ namespace Companies.API.Controllers
         }
 
         [HttpDelete]
-        [Route("delete-industry-by-name")]
-        public async Task<IActionResult> DeleteIndustryByName([FromQuery][Required] string industryName)
+        [Route("delete-industry-by-Name")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Administrator")]
+        public async Task<IActionResult> DeleteIndustryByName([FromQuery][Required] string name)
         {
             if (!ModelState.IsValid)
             {
@@ -68,8 +73,8 @@ namespace Companies.API.Controllers
 
             try
             {
-                await _industryService.DeleteIndustryByName(industryName);
-                return Ok($"Industry '{industryName}' deleted successfully.");
+                await _industryService.DeleteIndustryByName(name);
+                return Ok($"Industry '{name}' deleted successfully.");
             }
             catch (Exception ex)
             {

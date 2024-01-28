@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using Companies.Domain.Abstraction.Mappers;
 using Companies.Infrastructure.Models;
+using Companies.Infrastructure.Models.Auth;
 using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -67,6 +69,20 @@ namespace Companies.Domain.Services.Mappers
             return industryString.Split('/')
                 .Select(industryName => new IndustryInsertion
                 { Name = industryName.Trim() }).ToList();
+        }
+
+        public User MapUserFromDataReader(SqliteDataReader reader)
+        {
+            return new User
+            {
+                Id = Convert.ToInt32(reader["Id"]),
+                Username = reader["Username"].ToString(),
+                EmailAddress = reader["EmailAddress"].ToString(),
+                Password = reader["Password"].ToString(),
+                GivenName = reader["GivenName"].ToString(),
+                Surname = reader["Surname"].ToString(),
+                Role = reader["Role"].ToString(),
+            };
         }
     }
 }

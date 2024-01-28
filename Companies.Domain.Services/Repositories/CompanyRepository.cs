@@ -166,7 +166,7 @@ namespace Companies.Domain.Services.Repositories
             try
             {
                 List<Company> companies = new List<Company>();
-                using (var command = new SqliteCommand("SELECT * FROM Companies", _dataBaseContext.GetConnection()))
+                using (var command = new SqliteCommand("SELECT * FROM Companies LIMIT 150", _dataBaseContext.GetConnection()))
                 {
                     using (var reader = await command.ExecuteReaderAsync())
                     {
@@ -300,6 +300,43 @@ namespace Companies.Domain.Services.Repositories
             {
                 Log.Error(ex, "An exception occurred during bulk insert of companies.");
             }
+        }
+
+        public async Task<Company> GetCompanyByOrganizationId(string organizationId)
+        {
+            try
+            {
+                using (var command = new SqliteCommand("SELECT * FROM Companies WHERE OrganizationId = @OrganizationId", _dataBaseContext.GetConnection()))
+                {
+                    command.Parameters.AddWithValue("@OrganizationId", organizationId);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            var company = new Company
+                            {
+                                OrganizationId = reader.GetString(reader.GetOrdinal("OrganizationId")),
+                                Name = reader.GetString(reader.GetOrdinal("Name")),
+                                Website = reader.GetString(reader.GetOrdinal("Website")),
+                                Country = reader.GetString(reader.GetOrdinal("Country")),
+                                Description = reader.GetString(reader.GetOrdinal("Description")),
+                                Founded = reader.GetString(reader.GetOrdinal("Founded")),
+                                Employees = reader.GetString(reader.GetOrdinal("Employees")),
+                                Industries = await GetIndustriesByOrganizationId(organizationId)
+                            };
+
+                            return company;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "An exception occurred while trying to retrieve a company from the database.");
+            }
+
+            return null;
         }
     }
 }

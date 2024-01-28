@@ -46,13 +46,29 @@ namespace Companies.Domain.Services
             }
         }
 
+        public async Task ExequteSqliteCommandNoParameters(string commandText, SqliteConnection connection)
+        {
+            try
+            {
+                using (var command = new SqliteCommand(commandText, connection))
+                {
+                    await command.ExecuteNonQueryAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "an exception occured while trying to execute the command.");
+            }
+        }
+
         public async Task ResetDatabase()
         {
             try
             {
-                await ExequteSqliteCommand("DROP TABLE IF EXISTS Companies", _connection, new Dictionary<string, object>());
-                await ExequteSqliteCommand("DROP TABLE IF EXISTS Industries", _connection, new Dictionary<string, object>());
-                await ExequteSqliteCommand("DROP TABLE IF EXISTS CompanyIndustry", _connection, new Dictionary<string, object>());
+                await ExequteSqliteCommandNoParameters("DROP TABLE IF EXISTS Companies", _connection);
+                await ExequteSqliteCommandNoParameters("DROP TABLE IF EXISTS Industries", _connection);
+                await ExequteSqliteCommandNoParameters("DROP TABLE IF EXISTS CompanyIndustry", _connection);
+                await ExequteSqliteCommandNoParameters("DROP TABLE IF EXISTS Users", _connection);
 
                 Log.Information("The database tables were dropped.");
 
@@ -68,22 +84,36 @@ namespace Companies.Domain.Services
         {
             try
             {
-                await ExequteSqliteCommand("CREATE TABLE IF NOT EXISTS Companies " +
+                await ExequteSqliteCommandNoParameters("CREATE TABLE IF NOT EXISTS Companies " +
                     "(Id INTEGER, " +
                     "OrganizationId TEXT PRIMARY KEY, Name TEXT, Website TEXT, Country TEXT, " +
-                    "Description TEXT, Founded INTEGER, Industry TEXT, Employees INTEGER)",
-                    _connection, new Dictionary<string, object>());
+                    "Description TEXT, Founded INTEGER, Industry TEXT, Employees INTEGER, " +
+                    "CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP, " +
+                    "UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP)",
+                    _connection);
 
-                await ExequteSqliteCommand("CREATE TABLE IF NOT EXISTS Industries " +
-                    "(Name TEXT PRIMARY KEY)",
-                    _connection, new Dictionary<string, object>());
+                await ExequteSqliteCommandNoParameters("CREATE TABLE IF NOT EXISTS Industries " +
+                    "(Name TEXT PRIMARY KEY, " +
+                    "CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP, " +
+                    "UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP)",
+                    _connection);
 
-                await ExequteSqliteCommand("CREATE TABLE IF NOT EXISTS CompanyIndustry " +
+                await ExequteSqliteCommandNoParameters("CREATE TABLE IF NOT EXISTS CompanyIndustry " +
                     "(OrganizationId TEXT, Name TEXT, " +
+                    "CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP, " +
+                    "UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP, " +
                     "FOREIGN KEY (OrganizationId) REFERENCES Companies (OrganizationId), " +
                     "FOREIGN KEY (Name) REFERENCES Industries (Name), " +
                     "PRIMARY KEY (OrganizationId, Name))",
-                    _connection, new Dictionary<string, object>());
+                    _connection);
+
+                await ExequteSqliteCommandNoParameters("CREATE TABLE IF NOT EXISTS Users " +
+                    "(Id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    "Username TEXT, EmailAddress TEXT, Password TEXT, " +
+                    "GivenName TEXT, Surname TEXT, Role TEXT, " +
+                    "CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP, " +
+                    "UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP)",
+                    _connection);
 
                 Log.Information("The database was initialized.");
             }

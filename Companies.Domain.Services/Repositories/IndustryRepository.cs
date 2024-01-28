@@ -54,6 +54,8 @@ namespace Companies.Domain.Services.Repositories
         //insert industry
         public async Task InsertIndustry(string industryName)
         {
+            if (string.IsNullOrEmpty(industryName)) return;
+
             if (!IsUniqueIndustryName(industryName)) return;
 
                 var parameters = new Dictionary<string, object>
@@ -156,7 +158,7 @@ namespace Companies.Domain.Services.Repositories
 
             try
             {
-                using (var command = new SqliteCommand("SELECT Name FROM Industries", _dataBaseContext.GetConnection()))
+                using (var command = new SqliteCommand("SELECT Name FROM Industries LIMIT 150", _dataBaseContext.GetConnection()))
                 {
                     using (var reader = command.ExecuteReader())
                     {
@@ -178,6 +180,7 @@ namespace Companies.Domain.Services.Repositories
         //insert multiple industries
         public async Task InsertIndustries(IEnumerable<IndustryInsertion> industries)
         {
+            if(!industries.Any()||industries==null)  return; 
             try
             {
                 foreach (var industry in industries)

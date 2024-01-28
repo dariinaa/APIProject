@@ -1,12 +1,15 @@
 ﻿using Companies.Domain.Abstraction.Services;
 using Companies.Domain.Services;
 using Companies.Infrastructure.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Companies.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+
     public class CompanyController : Controller
     {
         private readonly ICompanyService _companyService;
@@ -18,6 +21,7 @@ namespace Companies.API.Controllers
 
         [HttpPost]
         [Route("insert-company")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Standart, Administrator")]
         public async Task<IActionResult> InsertCompany([FromBody] CompanyInsertion company)
         {
             if (!ModelState.IsValid)
@@ -38,6 +42,7 @@ namespace Companies.API.Controllers
 
         [HttpPut]
         [Route("update-company")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Standart, Administrator")]
         public async Task<IActionResult> UpdateCompany([FromBody] CompanyInsertion request)
         {
             if (!ModelState.IsValid)
@@ -57,7 +62,8 @@ namespace Companies.API.Controllers
         }
 
         [HttpDelete]
-        [Route("delete-company-by-organization-id")]
+        [Route("delete-company-by-OrganizationId")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Administrator")]
         public async Task<IActionResult> DeleteCompanyByOrganizationId(string organizationId)
         {
             if (string.IsNullOrEmpty(organizationId))

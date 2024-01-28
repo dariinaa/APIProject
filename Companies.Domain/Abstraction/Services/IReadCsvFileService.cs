@@ -9,5 +9,7 @@ namespace Companies.Domain.Abstraction.Services
     public interface IReadCsvFileService
     {
         Task SaveCsvDataToDatabaseAsync(string filePath);
+        Task SaveCsvDataToDatabaseFromFolderAsync(string folderPath);
+
     }
 }

@@ -22,11 +22,19 @@ namespace Companies.Domain.Services
 
         public async Task InsertCompany(CompanyInsertion company)
         {
+            if (company == null)
+            {
+                throw new ArgumentNullException(nameof(company), "Updated CompanyInsertion parameter cannot be null.");
+            }
             await _companyRepository.InsertCompany(company);
         }
 
         public async Task UpdateCompany(CompanyInsertion updatedCompany)
         {
+            if (updatedCompany == null)
+            {
+                throw new ArgumentNullException(nameof(updatedCompany), "Updated CompanyInsertion parameter cannot be null.");
+            }
             await _companyRepository.UpdateCompany(updatedCompany);
         }
 
@@ -37,6 +45,10 @@ namespace Companies.Domain.Services
 
         public async Task DeleteCompanyByOrganizationId(string organizationId)
         {
+            if (string.IsNullOrEmpty(organizationId))
+            {
+                throw new ArgumentException("OrganizationId cannot be null or empty.", nameof(organizationId));
+            }
             await _companyRepository.DeleteCompanyByOrganizationId(organizationId);
         }
     }
